@@ -3,7 +3,8 @@
  * @link https://piccalil.li/blog/a-more-modern-css-reset/
  *
  * Slight customizations:
- * - min-height: 100dvh;
+ * - min-height: 100svh;
+ * - Remove default margin:
  * - margin-block: 0;
  * - margin-inline: 0;
 */
@@ -45,7 +46,7 @@ ol[role="list"] {
 
 /* Set core body defaults */
 body {
-	min-height: 100dvh;
+	min-height: 100svh;
 	line-height: 1.5;
 }
 
