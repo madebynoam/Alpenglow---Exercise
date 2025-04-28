@@ -1,15 +1,11 @@
-# Alpenglow - Exercise
+# Alpenglow — Exercise
+
+## Overview
 
 Envisioning a new home for Basecamp.
 Shifting from static project cards to answering real questions:
 "What’s been happening in my projects?"
 "What’s next?"
-
-## Overview
-
-2–3 sentences.  
-What the project does.  
-What problem it solves.
 
 ## Live Demo
 
@@ -33,5 +29,3 @@ What problem it solves.
    (No build tools needed.)
 
 ## Notes
-
-Designed and coded for the 37signals at-home exercise.
