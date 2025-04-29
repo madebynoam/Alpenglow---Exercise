@@ -1,0 +1,84 @@
+:root {
+	--hsl-black: 0, 0%, 0%;
+	--hsl-white: 0, 0%, 100%;
+	--color-black: hsl(var(--hsl-black));
+	--color-white: hsl(var(--hsl-white));
+	--hsl-canvas: var(--hsl-white);
+	--color-body: hsl(33.3, 60%, 97.1%);
+	--color-canvas: var(--color-white);
+	--color-canvas-light: var(--color-white);
+
+	--hsl-ink: var(--hsl-black);
+	--color-ink-10: hsl(240, 7.7%, 97.5%);
+	--color-ink-20: hsl(200, 11.1%, 94.7%);
+	--color-ink-30: hsl(180, 3.7%, 89.4%);
+	--color-ink-40: hsl(200, 2.9%, 79.4%);
+	--color-ink-50: hsl(202.5, 4.1%, 62%);
+	--color-ink-60: hsl(198.5, 5.5%, 46.1%);
+	--color-ink-70: hsl(201, 10.8%, 36.5%);
+	--color-ink-80: hsl(202.1, 18.1%, 20.6%);
+	--color-ink-90: hsl(200.9, 33.3%, 13.5%);
+	--color-ink-100: hsl(199.1, 44%, 9.8%);
+	--color-ink: var(--color-ink-80);
+	--hsl-inverted: var(--hsl-white);
+
+	--hsl-uncolor: var(--hsl-slate);
+	--color-uncolor-10: var(--color-slate-10);
+	--color-uncolor-20: var(--color-slate-20);
+	--color-uncolor-30: var(--color-slate-30);
+	--color-uncolor-40: var(--color-slate-40);
+	--color-uncolor-50: var(--color-slate-50);
+	--color-uncolor-60: var(--color-slate-60);
+
+	--hsl-slate: 200.4, 30.6%, 66.1%;
+    --color-slate-10: hsl(200, 21.2%, 19.4%);
+    --color-slate-20: hsl(201.8, 18.3%, 23.5%);
+    --color-slate-30: hsl(199.1, 15.1%, 28.6%);
+    --color-slate-40: hsl(201.1, 19.6%, 37.1%);
+    --color-slate-50: hsl(200.4, 23.1%, 52.5%);
+    --color-slate-70: hsl(200, 43.8%, 81.2%);
+    --color-slate-80: hsl(201.3, 56.4%, 89.2%);
+    --color-slate-90: hsl(201.2, 63%, 94.7%);
+    --color-slate-100: hsl(205.7, 53.8%, 97.5%);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--hsl-canvas: 200, 28%, 14.7%;
+		--color-body: hsl(202.5, 42.1%, 7.5%);
+		--color-canvas: hsl(var(--hsl-canvas));
+		--color-canvas-light: var(--color-slate-10);
+
+		--hsl-ink: var(--hsl-white);
+		--color-ink-10: hsl(200, 18%, 19.6%);
+		--color-ink-20: hsl(201.2, 14%, 23.7%);
+		--color-ink-30: hsl(200, 10.2%, 28.8%);
+		--color-ink-40: hsl(201.4, 7.3%, 37.6%);
+		--color-ink-50: hsl(198.5, 5.5%, 53.5%);
+		--color-ink-60: hsl(201.8, 6.5%, 66.9%);
+		--color-ink-70: hsl(200, 9.7%, 81.8%);
+		--color-ink-80: hsl(205.7, 13.2%, 89.6%);
+		--color-ink-90: hsl(204, 18.5%, 94.7%);
+		--color-ink-100: hsl(240, 7.7%, 97.5%);
+		--hsl-inverted: var(--hsl-black);
+
+		--hsl-uncolor: var(--hsl-slate);
+        --color-uncolor-10: var(--color-slate-10);
+        --color-uncolor-20: var(--color-slate-20);
+        --color-uncolor-30: var(--color-slate-30);
+        --color-uncolor-40: var(--color-slate-40);
+        --color-uncolor-50: var(--color-slate-50);
+        --color-uncolor-60: var(--color-slate-60);
+
+		--hsl-slate: 200.4, 30.6%, 66.1%;
+        --color-slate-10: hsl(200, 21.2%, 19.4%);
+        --color-slate-20: hsl(201.8, 18.3%, 23.5%);
+        --color-slate-30: hsl(199.1, 15.1%, 28.6%);
+        --color-slate-40: hsl(201.1, 19.6%, 37.1%);
+        --color-slate-50: hsl(200.4, 23.1%, 52.5%);
+        --color-slate-70: hsl(200, 43.8%, 81.2%);
+        --color-slate-80: hsl(201.3, 56.4%, 89.2%);
+        --color-slate-90: hsl(201.2, 63%, 94.7%);
+        --color-slate-100: hsl(205.7, 53.8%, 97.5%);
+	}
+}

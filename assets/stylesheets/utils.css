@@ -1,0 +1,28 @@
+.align--center, .centered {
+    text-align: center;
+}
+
+.break {
+    position: relative;
+    z-index: 0;
+}
+
+.break:before {
+    border-block-end: 1px solid var(--color-uncolor-30);
+    content: "";
+    inset-block-start: 50%;
+    inset-inline: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.break>span {
+    background: var(--color-canvas);
+    display: inline-block;
+    padding: 0 .75ch;
+}
+
+.push_one_and_a_half--top {
+    margin-block-start: 1.875em !important;
+}
