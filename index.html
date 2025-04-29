@@ -18,6 +18,10 @@
 		<link rel="stylesheet" href="assets/stylesheets/components/panel.css" />
 		<link
 			rel="stylesheet"
+			href="assets/stylesheets/components/change-log.css"
+		/>
+		<link
+			rel="stylesheet"
 			href="assets/stylesheets/components/latest-activity.css"
 		/>
 
@@ -39,40 +43,61 @@
 			>
 				<span>Project Activity</span>
 			</h2>
-			<ul>
-				<li>
-					<h2>Monday, April 28</h2>
-					<h3>What will you be working on this week?</h3>
+			<ul class="change-log" role="list">
+				<li class="push_one_and_a_half--top">
+					<h2 class="push--top">Monday, April 28</h2>
+					<h3 class="push--top">What will you be working on this week?</h3>
 					<ul>
 						<li>
-							This week I'll tackle the At-home exercise. Evolving the Bascamp
-							home screen from being mostly a static project launcher, towards
-							answering "What's been happening across these projects?" The goal
-							will be to be able to answer this question for both situations
-							where a person has one or two projects, to having multiple
-							projects happening at once.
+							This week I’m tackling the at-home exercise. Evolving the Basecamp
+							home screen from a static project launcher into something more
+							dynamic. Answering: “What’s been happening across my projects?”,
+							"What's on deck?" The goal: work for both cases—one project or
+							many happening at once.
 						</li>
 					</ul>
 
-					<h3>What did you work on today?</h3>
-					<ul>
-						<li></li>
-					</ul>
-				</li>
-				<li>
-					<h2>Sunday, April 27</h2>
-					<h3>What did you work on today?</h3>
+					<h3 class="push--top">What did you work on today?</h3>
 					<ul>
 						<li>
-							Today I prepped the Basecamp project, logistic todos (Like
-							creating the repo, changelog, etc) and imported the brief as a
+							Moved the Basecamp project into a separate space for the exercise.
+							<a href="https://basecamp.com/guides/how-we-communicate"
+								>Following 37signals' Guide to Internal Communication.</a
+							>
+						</li>
+						<li>
+							Upgraded Basecamp to handle multiple projects. Invited my wife,
+							Isa, to collaborate on home projects and observe how updates and
+							assignments show up for each person.
+						</li>
+						<li>
+							Initialized the project repo, published it, and set up a subdomain
+							for easy access:
+							<a href="https://basecamp-home.ndan.works"
+								>basecamp-home.ndan.works</a
+							>. Every commit to main auto-deploys.
+						</li>
+						<li>
+							Started adding basic styles — mostly variables — to the repo.
+							Pulled a few values directly from Basecamp’s production code using
+							the inspector.
+						</li>
+						<li>Jotted down more rough ideas and notes in the Idea doc.</li>
+					</ul>
+				</li>
+				<li class="push_one_and_a_half--top">
+					<h2 class="push--top">Sunday, April 27</h2>
+					<h3 class="push--top">What did you work on today?</h3>
+					<ul>
+						<li>
+							Prepped the Basecamp project. Set up todos around logistics,
+							created a temp changelog doc, and imported the brief as a
 							document.
 						</li>
 						<li>
-							To get my thinking momentum going: I also started thinking a
-							little bit about framing the problem, what questions will this
-							solution answer? I started jotting down rough ideas in a doc which
-							I'll choose and edit as I progress this week.
+							Started framing the problem. What questions should this solution
+							answer? Began jotting down rough ideas, which I’ll shape and
+							refine as the week goes on.
 						</li>
 					</ul>
 				</li>
