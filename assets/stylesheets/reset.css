@@ -2,11 +2,13 @@
  * A (more) Modern CSS Reset
  * @link https://piccalil.li/blog/a-more-modern-css-reset/
  *
- * Slight customizations:
+ * Customizations:
  * - min-height: 100svh;
  * - Remove default margin:
  * - margin-block: 0;
  * - margin-inline: 0;
+ * - ul:
+ * - padding-inline: 0;
 */
 
 /* Box sizing rules */
@@ -42,6 +44,7 @@ dd {
 ul[role="list"],
 ol[role="list"] {
 	list-style: none;
+	padding-inline: 0;
 }
 
 /* Set core body defaults */
