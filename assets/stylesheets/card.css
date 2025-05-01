@@ -118,7 +118,7 @@
 }
 
 .card--project .card__people:before {
-	content: "";
+	content: '';
 	position: absolute;
 	background: linear-gradient(0deg, var(--card-color) 10%, transparent 100%);
 	block-size: 2em;
@@ -128,35 +128,6 @@
 }
 
 /* TODO: Move out */
-.avatar-group {
-	--gap: 0.4rem;
-	--size: 6.4rem;
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--gap);
-}
-
-.avatar-group .avatar {
-	align-self: flex-start;
-	block-size: var(--size);
-	line-height: var(--size);
-	margin: 0;
-	inline-size: var(--size);
-}
-
-.avatar-group--x-small .avatar {
-	--size: 2.4rem;
-}
-
-.avatar {
-	border-radius: 50%;
-	display: inline-block;
-	flex-shrink: 0;
-	overflow: hidden;
-	vertical-align: middle;
-}
-
 .colorpicker__menu {
 	animation: fade-in-down 0.15s ease-in-out;
 	background: var(--color-canvas-light);
@@ -173,7 +144,7 @@
 /* END TODO */
 
 .card--project .card__people:before {
-	content: "";
+	content: '';
 	position: absolute;
 	background: linear-gradient(0deg, var(--card-color) 10%, transparent 100%);
 	block-size: 2em;
