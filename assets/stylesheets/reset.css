@@ -9,6 +9,7 @@
  * - margin-inline: 0;
  * - ul:
  * - padding-inline: 0;
+ * - text-wrap: pretty; on headings
 */
 
 /* Box sizing rules */
@@ -41,8 +42,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
 	list-style: none;
 	padding-inline: 0;
 }
@@ -64,12 +65,9 @@ label {
 	line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-	text-wrap: balance;
+/* Pretty text wrapping on headings */
+:where(h1, h2, h3, h4) {
+	text-wrap: pretty;
 }
 
 /* A elements that don't have a class get default styles */
