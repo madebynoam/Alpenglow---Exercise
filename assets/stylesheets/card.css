@@ -127,22 +127,6 @@
 	z-index: 1;
 }
 
-/* TODO: Move out */
-.colorpicker__menu {
-	animation: fade-in-down 0.15s ease-in-out;
-	background: var(--color-canvas-light);
-	border-radius: var(--radius-lg);
-	box-shadow: var(--shadow-warm-lg);
-	padding: var(--gap);
-	position: absolute;
-	inset-inline-end: 0;
-	text-align: center;
-	inset-block-start: var(--trigger-size);
-	inline-size: fit-content;
-	z-index: 5;
-}
-/* END TODO */
-
 .card--project .card__people:before {
 	content: '';
 	position: absolute;
@@ -163,11 +147,9 @@
 	z-index: 5;
 }
 
-.card--project .colorpicker__trigger {
-	background: var(--card-color);
-	box-shadow: -4px 4px 2px var(--card-color);
-	opacity: 0;
-	transition: opacity var(--duration-medium) ease-out;
+.cards--bookmarked,
+.cards--unbookmarked {
+	display: contents;
 }
 
 .card__pin {
@@ -182,4 +164,58 @@
 	padding: 0;
 	place-items: center;
 	transition: opacity 0.3s;
+}
+
+.card__pin--unbookmarked {
+	opacity: 0.33;
+}
+
+.card__pin--unbookmarked:hover,
+.card__pin--unbookmarked:focus {
+	opacity: 1;
+}
+
+.card__pin--unbookmarked:focus {
+	transition: none;
+}
+
+.card__pin--bookmarked {
+	color: var(--color-red);
+}
+
+.cards--bookmarked,
+.cards--unbookmarked {
+	display: contents;
+}
+
+.cards--bookmarked .card__pin--unbookmarked {
+	display: none;
+}
+
+.cards--bookmarked .card-settings__button:not(.card-settings__button--close) {
+	display: none;
+}
+
+.cards--bookmarked .card-settings__action-pin {
+	display: none;
+}
+
+.cards--bookmarked .card-settings__action-unpin {
+	display: inline;
+}
+
+.cards--unbookmarked .card__pin--bookmarked {
+	display: none;
+}
+
+.svg-icon {
+	block-size: 1em;
+	fill: currentcolor;
+	flex-shrink: 0;
+	inline-size: 1em;
+	pointer-events: none;
+}
+
+svg:not(:root) {
+	overflow: hidden;
 }

@@ -23,6 +23,8 @@
 		/>
 		<link rel="stylesheet" href="../assets/stylesheets/card.css" />
 		<link rel="stylesheet" href="../assets/stylesheets/avatar.css" />
+		<link rel="stylesheet" href="../assets/stylesheets/knob.css" />
+		<link rel="stylesheet" href="../assets/stylesheets/colorpicker.css" />
 
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -68,951 +70,773 @@
 			</header>
 			<section class="push--top">
 				<div class="card-grid card-grid--projects">
-					<article class="card card--project card--project-topic">
-						<a class="card__link" href="#">
-							<div class="card__content">
-								<section>
-									<h2
-										class="card__title flush"
-										title=""
-										data-role="content_filter_text"
+					<span class="cards--bookmarked">
+						<article class="card card--project card--project-topic">
+							<a class="card__link" href="#">
+								<div class="card__content">
+									<section>
+										<h2
+											class="card__title flush"
+											title=""
+											data-role="content_filter_text"
+										>
+											Sorlaskjol 64 - Open house prep
+										</h2>
+
+										<p
+											class="card__description flush"
+											title=""
+											data-role="content_filter_text"
+										>
+											We'll use this project to manage prepping the house for
+											sale.
+										</p>
+									</section>
+
+									<section
+										class="card__people avatar-group avatar-group--x-small"
+										aria-hidden="true"
 									>
-										Sorlaskjol 64 - Open house prep
-									</h2>
-
-									<p
-										class="card__description flush"
-										title=""
-										data-role="content_filter_text"
-									>
-										We'll use this project to manage prepping the house for
-										sale.
-									</p>
-								</section>
-
-								<section
-									class="card__people avatar-group avatar-group--x-small"
-									aria-hidden="true"
-								>
-									<img
-										data-avatar-for-person-id="48260173"
-										alt="Isa Almosnino"
-										title="Isa Almosnino, Partner"
-										class="avatar"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
-										width="130"
-										height="130"
-									/>
-									<img
-										data-avatar-for-person-id="47863987"
-										alt="N. Dan Almosnino"
-										title="N. Dan Almosnino, Noam Inc"
-										class="avatar"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
-										width="130"
-										height="130"
-									/>
-								</section>
-							</div>
-						</a>
-
-						<div class="card__settings" data-role="project_settings">
-							<details class="colorpicker">
-								<summary class="colorpicker__trigger">
-									<img
-										alt="Choose a color"
-										class="svg-icon"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
-									/>
-								</summary>
-								<div class="colorpicker__menu">
-									<div class="txt--xxx-small txt--w-medium">Color me in!</div>
-									<ul class="colorpicker__swatches list--unbulleted">
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="white"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--white"
-												aria-label="white"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=white"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="yellow"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--yellow"
-												aria-label="yellow"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=yellow"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="orange"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--orange"
-												aria-label="orange"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="red"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--red"
-												aria-label="red"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=red"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="pink"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--pink"
-												aria-label="pink"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=pink"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="purple"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--purple"
-												aria-label="purple"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=purple"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="blue"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--blue"
-												aria-label="blue"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=blue"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="green"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--green"
-												aria-label="green"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=green"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="brown"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--brown"
-												aria-label="brown"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=brown"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="gray"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--gray"
-												aria-label="gray"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=gray"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-									</ul>
+										<img
+											data-avatar-for-person-id="48260173"
+											alt="Isa Almosnino"
+											title="Isa Almosnino, Partner"
+											class="avatar"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
+											width="130"
+											height="130"
+										/>
+										<img
+											data-avatar-for-person-id="47863987"
+											alt="N. Dan Almosnino"
+											title="N. Dan Almosnino, Noam Inc"
+											class="avatar"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+											width="130"
+											height="130"
+										/>
+									</section>
 								</div>
-							</details>
+							</a>
 
-							<form
-								class="button_to"
-								method="post"
-								action="/5926919/buckets/42074826/pins"
-							>
-								<input
-									type="hidden"
-									name="_method"
-									value="delete"
-									autocomplete="off"
-								/><button
-									class="card__pin card__pin--bookmarked"
-									aria-label="Unpin"
-									type="submit"
-								>
-									<svg class="svg-icon svg-icon--pin-solid" aria-hidden="true">
-										<use
-											href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#pin-solid"
-										></use>
-									</svg></button
-								><input
-									type="hidden"
-									name="authenticity_token"
-									value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
-									autocomplete="off"
-								/>
-							</form>
-							<form
-								class="button_to"
-								method="post"
-								action="/5926919/buckets/42074826/pins"
-							>
-								<button
-									class="card__pin card__pin--unbookmarked"
-									aria-label="Pin"
-									type="submit"
-								>
-									<svg class="svg-icon svg-icon--pin-solid" aria-hidden="true">
-										<use
-											href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#pin-solid"
-										></use>
-									</svg></button
-								><input
-									type="hidden"
-									name="authenticity_token"
-									value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
-									autocomplete="off"
-								/>
-							</form>
-						</div>
-					</article>
+							<div class="card__settings" data-role="project_settings">
+								<details class="colorpicker">
+									<summary class="colorpicker__trigger">
+										<img
+											alt="Choose a color"
+											class="svg-icon"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
+										/>
+									</summary>
+								</details>
 
-					<article class="card card--project card--project-topic">
-						<a class="card__link" href="#">
-							<div class="card__content">
-								<section>
-									<h2
-										class="card__title flush"
-										title=""
-										data-role="content_filter_text"
-									>
-										Klara
-									</h2>
-
-									<p
-										class="card__description flush"
-										title=""
-										data-role="content_filter_text"
-									>
-										Managing all things for Klara!
-									</p>
-								</section>
-
-								<section
-									class="card__people avatar-group avatar-group--x-small"
-									aria-hidden="true"
-								>
-									<img
-										data-avatar-for-person-id="48260173"
-										alt="Isa Almosnino"
-										title="Isa Almosnino, Partner"
-										class="avatar"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
-										width="130"
-										height="130"
-									/>
-									<img
-										data-avatar-for-person-id="47863987"
-										alt="N. Dan Almosnino"
-										title="N. Dan Almosnino, Noam Inc"
-										class="avatar"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
-										width="130"
-										height="130"
-									/>
-								</section>
-							</div>
-						</a>
-
-						<div class="card__settings" data-role="project_settings">
-							<details class="colorpicker">
-								<summary class="colorpicker__trigger">
-									<img
-										alt="Choose a color"
-										class="svg-icon"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
-									/>
-								</summary>
-								<div class="colorpicker__menu">
-									<div class="txt--xxx-small txt--w-medium">Color me in!</div>
-									<ul class="colorpicker__swatches list--unbulleted">
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="white"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--white"
-												aria-label="white"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=white"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="yellow"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--yellow"
-												aria-label="yellow"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=yellow"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="orange"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--orange"
-												aria-label="orange"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="red"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--red"
-												aria-label="red"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=red"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="pink"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--pink"
-												aria-label="pink"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=pink"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="purple"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--purple"
-												aria-label="purple"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=purple"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="blue"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--blue"
-												aria-label="blue"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=blue"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="green"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--green"
-												aria-label="green"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=green"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="brown"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--brown"
-												aria-label="brown"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=brown"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="gray"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--gray"
-												aria-label="gray"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=gray"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-									</ul>
+								<div class="knob" aria-label="Toggle 'At a glance'">
+									<svg class="svg-icon knob__icon" aria-hidden="true">
+										<use href="assets/icons/prototype-sprites.svg#knob-0"></use>
+									</svg>
 								</div>
-							</details>
 
-							<form
-								class="button_to"
-								method="post"
-								action="/5926919/buckets/42074826/pins"
-							>
-								<input
-									type="hidden"
-									name="_method"
-									value="delete"
-									autocomplete="off"
-								/><button
-									class="card__pin card__pin--bookmarked"
-									aria-label="Unpin"
-									type="submit"
+								<form
+									class="button_to"
+									method="post"
+									action="/5926919/buckets/42074826/pins"
 								>
-									<svg class="svg-icon svg-icon--pin-solid" aria-hidden="true">
-										<use
-											href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#pin-solid"
-										></use>
-									</svg></button
-								><input
-									type="hidden"
-									name="authenticity_token"
-									value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
-									autocomplete="off"
-								/>
-							</form>
-							<form
-								class="button_to"
-								method="post"
-								action="/5926919/buckets/42074826/pins"
-							>
-								<button
-									class="card__pin card__pin--unbookmarked"
-									aria-label="Pin"
-									type="submit"
-								>
-									<svg class="svg-icon svg-icon--pin-solid" aria-hidden="true">
-										<use
-											href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#pin-solid"
-										></use>
-									</svg></button
-								><input
-									type="hidden"
-									name="authenticity_token"
-									value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
-									autocomplete="off"
-								/>
-							</form>
-						</div>
-					</article>
-
-					<article class="card card--project card--project-topic">
-						<a class="card__link" href="#">
-							<div class="card__content">
-								<section>
-									<h2
-										class="card__title flush"
-										title=""
-										data-role="content_filter_text"
+									<input
+										type="hidden"
+										name="_method"
+										value="delete"
+										autocomplete="off"
+									/><button
+										class="card__pin card__pin--bookmarked"
+										aria-label="Unpin"
+										type="submit"
 									>
-										At-home Exercise
-									</h2>
+										<svg
+											class="svg-icon svg-icon--pin-solid"
+											aria-hidden="true"
+										>
+											<use href="assets/icons/sprites.svg#pin-solid"></use>
+										</svg></button
+									><input
+										type="hidden"
+										name="authenticity_token"
+										value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
+										autocomplete="off"
+									/>
+								</form>
 
-									<p
-										class="card__description flush"
-										title=""
-										data-role="content_filter_text"
-									>
-										Rethinking the Basecamp home screen.
-									</p>
-								</section>
-
-								<section
-									class="card__people avatar-group avatar-group--x-small"
-									aria-hidden="true"
+								<form
+									class="button_to"
+									method="post"
+									action="/5926919/buckets/42074826/pins"
 								>
-									<img
-										data-avatar-for-person-id="48260173"
-										alt="Isa Almosnino"
-										title="Isa Almosnino, Partner"
-										class="avatar"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
-										width="130"
-										height="130"
+									<button
+										class="card__pin card__pin--unbookmarked"
+										aria-label="Pin"
+										type="submit"
+									>
+										<svg
+											class="svg-icon svg-icon--pin-solid"
+											aria-hidden="true"
+										>
+											<use href="assets/icons/sprites.svg#pin-solid"></use>
+										</svg></button
+									><input
+										type="hidden"
+										name="authenticity_token"
+										value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
+										autocomplete="off"
 									/>
-									<img
-										data-avatar-for-person-id="47863987"
-										alt="N. Dan Almosnino"
-										title="N. Dan Almosnino, Noam Inc"
-										class="avatar"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
-										width="130"
-										height="130"
-									/>
-								</section>
+								</form>
 							</div>
-						</a>
+						</article>
 
-						<div class="card__settings" data-role="project_settings">
-							<details class="colorpicker">
-								<summary class="colorpicker__trigger">
-									<img
-										alt="Choose a color"
-										class="svg-icon"
-										src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
-									/>
-								</summary>
-								<div class="colorpicker__menu">
-									<div class="txt--xxx-small txt--w-medium">Color me in!</div>
-									<ul class="colorpicker__swatches list--unbulleted">
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="white"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--white"
-												aria-label="white"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=white"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="yellow"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--yellow"
-												aria-label="yellow"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=yellow"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="orange"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--orange"
-												aria-label="orange"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="red"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--red"
-												aria-label="red"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=red"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="pink"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--pink"
-												aria-label="pink"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=pink"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="purple"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--purple"
-												aria-label="purple"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=purple"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="blue"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--blue"
-												aria-label="blue"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=blue"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="green"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--green"
-												aria-label="green"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=green"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="brown"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--brown"
-												aria-label="brown"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=brown"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-										<li>
-											<a
-												data-turbo-method="put"
-												data-action="color-picker#pick details#close"
-												data-color-picker-color-param="gray"
-												data-color-picker-target="swatch"
-												class="colorpicker__swatch colorpicker__swatch--gray"
-												aria-label="gray"
-												aria-current="false"
-												role="button"
-												href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=gray"
-												><svg
-													class="svg-icon svg-icon--check-solid"
-													aria-hidden="true"
-												>
-													<use
-														href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-													></use></svg
-											></a>
-										</li>
-									</ul>
+						<article class="card card--project card--project-topic">
+							<a class="card__link" href="#">
+								<div class="card__content">
+									<section>
+										<h2
+											class="card__title flush"
+											title=""
+											data-role="content_filter_text"
+										>
+											Klara
+										</h2>
+
+										<p
+											class="card__description flush"
+											title=""
+											data-role="content_filter_text"
+										>
+											Managing all things for Klara!
+										</p>
+									</section>
+
+									<section
+										class="card__people avatar-group avatar-group--x-small"
+										aria-hidden="true"
+									>
+										<img
+											data-avatar-for-person-id="48260173"
+											alt="Isa Almosnino"
+											title="Isa Almosnino, Partner"
+											class="avatar"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
+											width="130"
+											height="130"
+										/>
+										<img
+											data-avatar-for-person-id="47863987"
+											alt="N. Dan Almosnino"
+											title="N. Dan Almosnino, Noam Inc"
+											class="avatar"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+											width="130"
+											height="130"
+										/>
+									</section>
 								</div>
-							</details>
+							</a>
 
-							<form
-								class="button_to"
-								method="post"
-								action="/5926919/buckets/42074826/pins"
-							>
-								<input
-									type="hidden"
-									name="_method"
-									value="delete"
-									autocomplete="off"
-								/><button
-									class="card__pin card__pin--bookmarked"
-									aria-label="Unpin"
-									type="submit"
+							<div class="card__settings" data-role="project_settings">
+								<details class="colorpicker">
+									<summary class="colorpicker__trigger">
+										<img
+											alt="Choose a color"
+											class="svg-icon"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
+										/>
+									</summary>
+									<div class="colorpicker__menu">
+										<div class="txt--xxx-small txt--w-medium">Color me in!</div>
+										<ul class="colorpicker__swatches list--unbulleted">
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="white"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--white"
+													aria-label="white"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=white"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="yellow"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--yellow"
+													aria-label="yellow"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=yellow"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="orange"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--orange"
+													aria-label="orange"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="red"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--red"
+													aria-label="red"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=red"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="pink"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--pink"
+													aria-label="pink"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=pink"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="purple"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--purple"
+													aria-label="purple"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=purple"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="blue"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--blue"
+													aria-label="blue"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=blue"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="green"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--green"
+													aria-label="green"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=green"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="brown"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--brown"
+													aria-label="brown"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=brown"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="gray"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--gray"
+													aria-label="gray"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=gray"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+										</ul>
+									</div>
+								</details>
+
+								<div class="knob" aria-label="Toggle 'At a glance'">
+									<svg class="svg-icon knob__icon" aria-hidden="true">
+										<use href="assets/icons/prototype-sprites.svg#knob-0"></use>
+									</svg>
+								</div>
+
+								<form
+									class="button_to"
+									method="post"
+									action="/5926919/buckets/42074826/pins"
 								>
-									<svg class="svg-icon svg-icon--pin-solid" aria-hidden="true">
-										<use
-											href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#pin-solid"
-										></use>
-									</svg></button
-								><input
-									type="hidden"
-									name="authenticity_token"
-									value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
-									autocomplete="off"
-								/>
-							</form>
-							<form
-								class="button_to"
-								method="post"
-								action="/5926919/buckets/42074826/pins"
-							>
-								<button
-									class="card__pin card__pin--unbookmarked"
-									aria-label="Pin"
-									type="submit"
+									<input
+										type="hidden"
+										name="_method"
+										value="delete"
+										autocomplete="off"
+									/><button
+										class="card__pin card__pin--bookmarked"
+										aria-label="Unpin"
+										type="submit"
+									>
+										<svg
+											class="svg-icon svg-icon--pin-solid"
+											aria-hidden="true"
+										>
+											<use href="assets/icons/sprites.svg#pin-solid"></use>
+										</svg></button
+									><input
+										type="hidden"
+										name="authenticity_token"
+										value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
+										autocomplete="off"
+									/>
+								</form>
+								<form
+									class="button_to"
+									method="post"
+									action="/5926919/buckets/42074826/pins"
 								>
-									<svg class="svg-icon svg-icon--pin-solid" aria-hidden="true">
-										<use
-											href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#pin-solid"
-										></use>
-									</svg></button
-								><input
-									type="hidden"
-									name="authenticity_token"
-									value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
-									autocomplete="off"
-								/>
-							</form>
-						</div>
-					</article>
+									<button
+										class="card__pin card__pin--unbookmarked"
+										aria-label="Pin"
+										type="submit"
+									>
+										<svg
+											class="svg-icon svg-icon--pin-solid"
+											aria-hidden="true"
+										>
+											<use href="assets/icons/sprites.svg#pin-solid"></use>
+										</svg></button
+									><input
+										type="hidden"
+										name="authenticity_token"
+										value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
+										autocomplete="off"
+									/>
+								</form>
+							</div>
+						</article>
+
+						<article class="card card--project card--project-topic">
+							<a class="card__link" href="#">
+								<div class="card__content">
+									<section>
+										<h2
+											class="card__title flush"
+											title=""
+											data-role="content_filter_text"
+										>
+											At-home Exercise
+										</h2>
+
+										<p
+											class="card__description flush"
+											title=""
+											data-role="content_filter_text"
+										>
+											Rethinking the Basecamp home screen.
+										</p>
+									</section>
+
+									<section
+										class="card__people avatar-group avatar-group--x-small"
+										aria-hidden="true"
+									>
+										<img
+											data-avatar-for-person-id="48260173"
+											alt="Isa Almosnino"
+											title="Isa Almosnino, Partner"
+											class="avatar"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
+											width="130"
+											height="130"
+										/>
+										<img
+											data-avatar-for-person-id="47863987"
+											alt="N. Dan Almosnino"
+											title="N. Dan Almosnino, Noam Inc"
+											class="avatar"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+											width="130"
+											height="130"
+										/>
+									</section>
+								</div>
+							</a>
+
+							<div class="card__settings" data-role="project_settings">
+								<details class="colorpicker">
+									<summary class="colorpicker__trigger">
+										<img
+											alt="Choose a color"
+											class="svg-icon"
+											src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
+										/>
+									</summary>
+									<div class="colorpicker__menu">
+										<div class="txt--xxx-small txt--w-medium">Color me in!</div>
+										<ul class="colorpicker__swatches list--unbulleted">
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="white"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--white"
+													aria-label="white"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=white"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="yellow"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--yellow"
+													aria-label="yellow"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=yellow"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="orange"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--orange"
+													aria-label="orange"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="red"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--red"
+													aria-label="red"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=red"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="pink"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--pink"
+													aria-label="pink"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=pink"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="purple"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--purple"
+													aria-label="purple"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=purple"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="blue"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--blue"
+													aria-label="blue"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=blue"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="green"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--green"
+													aria-label="green"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=green"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="brown"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--brown"
+													aria-label="brown"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=brown"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+											<li>
+												<a
+													data-turbo-method="put"
+													data-action="color-picker#pick details#close"
+													data-color-picker-color-param="gray"
+													data-color-picker-target="swatch"
+													class="colorpicker__swatch colorpicker__swatch--gray"
+													aria-label="gray"
+													aria-current="false"
+													role="button"
+													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=gray"
+													><svg
+														class="svg-icon svg-icon--check-solid"
+														aria-hidden="true"
+													>
+														<use
+															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
+														></use></svg
+												></a>
+											</li>
+										</ul>
+									</div>
+								</details>
+
+								<div class="knob" aria-label="Toggle 'At a glance'">
+									<svg class="svg-icon knob__icon" aria-hidden="true">
+										<use href="assets/icons/prototype-sprites.svg#knob-0"></use>
+									</svg>
+								</div>
+
+								<form
+									class="button_to"
+									method="post"
+									action="/5926919/buckets/42074826/pins"
+								>
+									<input
+										type="hidden"
+										name="_method"
+										value="delete"
+										autocomplete="off"
+									/><button
+										class="card__pin card__pin--bookmarked"
+										aria-label="Unpin"
+										type="submit"
+									>
+										<svg
+											class="svg-icon svg-icon--pin-solid"
+											aria-hidden="true"
+										>
+											<use href="assets/icons/sprites.svg#pin-solid"></use>
+										</svg></button
+									><input
+										type="hidden"
+										name="authenticity_token"
+										value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
+										autocomplete="off"
+									/>
+								</form>
+								<form
+									class="button_to"
+									method="post"
+									action="/5926919/buckets/42074826/pins"
+								>
+									<button
+										class="card__pin card__pin--unbookmarked"
+										aria-label="Pin"
+										type="submit"
+									>
+										<svg
+											class="svg-icon svg-icon--pin-solid"
+											aria-hidden="true"
+										>
+											<use href="assets/icons/sprites.svg#pin-solid"></use>
+										</svg></button
+									><input
+										type="hidden"
+										name="authenticity_token"
+										value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
+										autocomplete="off"
+									/>
+								</form>
+							</div>
+						</article>
+					</span>
 				</div>
 			</section>
 			<section class="project-index__mystuff"></section>

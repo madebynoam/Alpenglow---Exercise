@@ -1,0 +1,46 @@
+.colorpicker {
+	--gap: 0.8rem;
+	--trigger-size: 2.4rem;
+	position: relative;
+}
+
+.colorpicker__trigger {
+	--size: 2.4rem;
+	border-radius: 50%;
+	cursor: pointer;
+	display: grid;
+	font-size: var(--txt-medium);
+	block-size: var(--trigger-size);
+	place-items: center;
+	transition: opacity 150ms;
+	inline-size: var(--trigger-size);
+}
+
+.card--project .colorpicker__trigger {
+	background: var(--card-color);
+	box-shadow: -4px 4px 2px var(--card-color);
+	opacity: 0;
+	transition: opacity var(--duration-medium) ease-out;
+}
+
+.card--project .colorpicker__trigger:is(:hover, :focus, :focus-visible) {
+	opacity: 1;
+}
+
+.card--project:where(:hover) .colorpicker__trigger,
+.card--project:where(:has(a:is(:focus, :focus-visible))) .colorpicker__trigger {
+	opacity: 0.33;
+}
+.colorpicker__menu {
+	animation: fade-in-down 0.15s ease-in-out;
+	background: var(--color-canvas-light);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-warm-lg);
+	padding: var(--gap);
+	position: absolute;
+	inset-inline-end: 0;
+	text-align: center;
+	inset-block-start: var(--trigger-size);
+	inline-size: fit-content;
+	z-index: 5;
+}

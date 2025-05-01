@@ -1,0 +1,23 @@
+.knob {
+	--trigger-size: 2.4rem;
+	position: relative;
+	cursor: pointer;
+	opacity: 0.33;
+	transition: opacity 150ms;
+}
+
+.knob__icon {
+	--size: 2.4rem;
+	border-radius: 50%;
+	cursor: pointer;
+	display: grid;
+	font-size: var(--txt-medium);
+	block-size: var(--trigger-size);
+	place-items: center;
+	inline-size: var(--trigger-size);
+}
+
+.knob:hover,
+.knob:focus {
+	opacity: 1;
+}
