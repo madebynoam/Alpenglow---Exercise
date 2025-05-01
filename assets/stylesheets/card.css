@@ -1,0 +1,177 @@
+.card--project {
+    --card-color: var(--color-canvas);
+    --font-size: var(--txt-medium);
+    --max-width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: var(--card-color);
+    border-radius: var(--radius-lg);
+    border: 0;
+    box-shadow: var(--shadow-card);
+    font-size: var(--font-size);
+    inline-size: 100%;
+    margin: 0;
+    max-inline-size: var(--max-width);
+}
+
+@media screen and (min-width: 480px) {
+    .card-grid--projects .card--project {
+        --font-size: clamp(1.3rem, 2vw, 1.7rem);
+        --max-width: var(--card-2-col);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-grid--projects .card--project {
+        --font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+        --max-width: var(--card-3-col);
+    }
+}
+
+.card__link {
+    min-block-size: 100%;
+    inset: 0;
+    position: absolute;
+}
+
+.card--project .card__content {
+    padding: 1.1em;
+}
+
+.card__content {
+    inset: 0;
+    overflow: hidden;
+    padding: var(--card-padding-block) var(--card-padding-inline);
+    position: absolute;
+}
+
+.card--project .card__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: 1.2em;
+    padding-inline-end: 1rem;
+    padding-block-start: 1px;
+    position: relative;
+    inline-size: 100%;
+    z-index: 2;
+}
+
+.card--project .card__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+}
+
+.card--project .card__title+.card__description, .card--project .card__title+.card__metadata {
+    padding-block-start: .2em;
+}
+
+.card--project .card__people {
+    position: absolute;
+    inset-block-end: .6em;
+    inset-inline-start: 1em;
+    inset-inline-end: 1em;
+    background: var(--card-color);
+}
+
+.card--project .card__people:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, var(--card-color) 10%, transparent 100%);
+    block-size: 2em;
+    inline-size: 100%;
+    inset-block-start: -2em;
+    z-index: 1;
+}
+
+/* TODO: Move out */
+.avatar-group {
+    --gap: 0.4rem;
+    --size: 6.4rem;
+    align-items: center;
+    display: flex
+;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.avatar-group .avatar {
+    align-self: flex-start;
+    block-size: var(--size);
+    line-height: var(--size);
+    margin: 0;
+    inline-size: var(--size);
+}
+
+.avatar-group--x-small .avatar {
+    --size: 2.4rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.colorpicker__menu {
+    animation: fade-in-down .15s ease-in-out;
+    background: var(--color-canvas-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-warm-lg);
+    padding: var(--gap);
+    position: absolute;
+    inset-inline-end: 0;
+    text-align: center;
+    inset-block-start: var(--trigger-size);
+    inline-size: fit-content;
+    z-index: 5;
+}
+/* END TODO */
+
+.card--project .card__people:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, var(--card-color) 10%, transparent 100%);
+    block-size: 2em;
+    inline-size: 100%;
+    inset-block-start: -2em;
+    z-index: 1;
+}
+
+.card__settings {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    inset-inline-end: .8rem;
+    inset-block-start: .8rem;
+    z-index: 5;
+}
+
+.card--project .colorpicker__trigger {
+    background: var(--card-color);
+    box-shadow: -4px 4px 2px var(--card-color);
+    opacity: 0;
+    transition: opacity var(--duration-medium) ease-out;
+}
+
+.card__pin {
+    --size: 2.4rem;
+    background: none;
+    block-size: var(--size);
+    border: none;
+    color: var(--color-ink);
+    display: grid
+;
+    font-size: 1.6rem;
+    inline-size: var(--size);
+    padding: 0;
+    place-items: center;
+    transition: opacity .3s;
+}

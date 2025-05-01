@@ -79,3 +79,7 @@ a {
     color: inherit;
     text-decoration: none
 }
+
+section {
+    position: relative;
+}
