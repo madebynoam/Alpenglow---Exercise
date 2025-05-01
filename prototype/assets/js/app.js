@@ -4,7 +4,9 @@ document.querySelectorAll('.card').forEach((card) => {
 
   if (!knob || details.length < 2) return;
 
-  knob.addEventListener('click', () => {
+  knob.addEventListener('click', (e) => {
+    e.preventDefault();
+
     const currentIndex = Array.from(details).findIndex(
       (el) => el.dataset.active === 'true'
     );
