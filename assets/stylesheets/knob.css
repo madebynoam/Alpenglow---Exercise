@@ -1,23 +1,44 @@
 .knob {
-	--trigger-size: 2.4rem;
-	position: relative;
-	cursor: pointer;
-	opacity: 0.33;
-	transition: opacity 150ms;
-}
-
-.knob__icon {
-	--size: 2.4rem;
-	border-radius: 50%;
-	cursor: pointer;
-	display: grid;
-	font-size: var(--txt-medium);
-	block-size: var(--trigger-size);
-	place-items: center;
-	inline-size: var(--trigger-size);
+  --trigger-size: 2.4rem;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.33;
+  transition: opacity 150ms;
 }
 
 .knob:hover,
 .knob:focus {
-	opacity: 1;
+  opacity: 1;
+}
+
+.knob__icon {
+  --size: 2.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  font-size: var(--txt-medium);
+  block-size: var(--trigger-size);
+  place-items: center;
+  inline-size: var(--trigger-size);
+}
+
+.knob__dial {
+  transform-origin: 50% 57%;
+  transition: transform 0.3s ease;
+}
+
+.knob[data-level='0'] .knob__dial {
+  transform: rotate(0deg);
+}
+.knob[data-level='1'] .knob__dial {
+  transform: rotate(45deg);
+}
+.knob[data-level='2'] .knob__dial {
+  transform: rotate(90deg);
+}
+.knob[data-level='3'] .knob__dial {
+  transform: rotate(135deg);
+}
+.knob[data-level='4'] .knob__dial {
+  transform: rotate(180deg);
 }

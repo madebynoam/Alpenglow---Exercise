@@ -1,846 +1,513 @@
 <!DOCTYPE html>
 <html lang="">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-		/>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-		<title></title>
+    <title></title>
 
-		<link rel="stylesheet" href="../assets/stylesheets/reset.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/colors.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/base.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/text.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/utils.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/reset.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/colors.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/base.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/text.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/utils.css" />
 
-		<link rel="stylesheet" href="../assets/stylesheets/components/nav.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/components/panel.css" />
-		<link
-			rel="stylesheet"
-			href="../assets/stylesheets/components/buttons.css"
-		/>
-		<link rel="stylesheet" href="../assets/stylesheets/card.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/avatar.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/knob.css" />
-		<link rel="stylesheet" href="../assets/stylesheets/colorpicker.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/components/nav.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/components/panel.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/stylesheets/components/buttons.css"
+    />
+    <link rel="stylesheet" href="../assets/stylesheets/card.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/avatar.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/knob.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/colorpicker.css" />
 
-		<link rel="icon" href="/favicon.ico" sizes="any" />
-		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-		<link rel="apple-touch-icon" href="icon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-		<!-- <link rel="manifest" href="site.webmanifest" /> -->
-		<!-- <meta name="theme-color" content="#fafafa" /> -->
-	</head>
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
+    <!-- <meta name="theme-color" content="#fafafa" /> -->
+  </head>
 
-	<body>
-		<div class="nav">
-			<nav></nav>
-		</div>
-		<div class="panel">
-			<header class="centered">
-				<div class="flex flex-center-justify">
-					<h1 class="push_quarter--ends">N. Dan .Works</h1>
-				</div>
-				<div
-					class="flex flex-wrap flex--gap flex-center-justify push_half--top"
-				>
-					<a class="flush btn btn--primary" href="#">Make a new project</a>
-					<a class="flush btn btn--primary" href="#">Invite people</a>
-				</div>
-				<p class="txt--x-small push--ends centered">
-					<a class="decorated decorated--matched" href="#"
-						>View all projects in a list</a
-					>
-					·
-					<a class="decorated decorated--matched" href="#">View templates</a>
-					<span class="hide_on_mobile">
-						· Press<a
-							href="#jump-menu"
-							class="btn__keyboard-shortcut txt--ink"
-							tabindex="0"
-							data-turbo="false"
-							data-behavior="show_jump_menu_button"
-							><span data-role="jump-menu-modifier-key">⌘</span>J</a
-						>
-						anytime to jump
-					</span>
-				</p>
-			</header>
-			<section class="push--top">
-				<div class="card-grid card-grid--projects">
-					<span class="cards--bookmarked">
-						<article class="card card--project card--project-topic">
-							<a class="card__link" href="#">
-								<div class="card__content">
-									<section>
-										<h2
-											class="card__title flush"
-											title=""
-											data-role="content_filter_text"
-										>
-											Sorlaskjol 64 - Open house prep
-										</h2>
+  <body>
+    <div class="nav">
+      <nav></nav>
+    </div>
+    <div class="panel">
+      <header class="centered">
+        <div class="flex flex-center-justify">
+          <h1 class="push_quarter--ends">N. Dan .Works</h1>
+        </div>
+        <div
+          class="flex flex-wrap flex--gap flex-center-justify push_half--top"
+        >
+          <a class="flush btn btn--primary" href="#">Make a new project</a>
+          <a class="flush btn btn--primary" href="#">Invite people</a>
+        </div>
+        <p class="txt--x-small push--ends centered">
+          <a class="decorated decorated--matched" href="#"
+            >View all projects in a list</a
+          >
+          ·
+          <a class="decorated decorated--matched" href="#">View templates</a>
+          <span class="hide_on_mobile">
+            · Press<a
+              href="#jump-menu"
+              class="btn__keyboard-shortcut txt--ink"
+              tabindex="0"
+              data-turbo="false"
+              data-behavior="show_jump_menu_button"
+              ><span data-role="jump-menu-modifier-key">⌘</span>J</a
+            >
+            anytime to jump
+          </span>
+        </p>
+      </header>
+      <section class="push--top">
+        <div class="card-grid card-grid--projects">
+          <span class="cards--bookmarked">
+            <article class="card card--project card--project-topic">
+              <a class="card__link" href="#">
+                <div class="card__content">
+                  <section>
+                    <h2
+                      class="card__title flush"
+                      title=""
+                      data-role="content_filter_text"
+                    >
+                      Sorlaskjol 64 - Open house prep
+                    </h2>
 
-										<p
-											class="card__description flush"
-											title=""
-											data-role="content_filter_text"
-										>
-											We'll use this project to manage prepping the house for
-											sale.
-										</p>
-									</section>
+                    <section class="card__details">
+                      <div class="card__detail" data-active="true">
+                        <p
+                          class="card__description flush"
+                          title=""
+                          data-role="content_filter_text"
+                        >
+                          We'll use this project to manage prepping the house
+                          for sale.
+                        </p>
+                      </div>
+                      <div class="card__detail">
+                        Isa completed a task: Sorpa.
+                      </div>
+                      <div class="card__detail">Hill chart</div>
+                    </section>
+                  </section>
 
-									<section
-										class="card__people avatar-group avatar-group--x-small"
-										aria-hidden="true"
-									>
-										<img
-											data-avatar-for-person-id="48260173"
-											alt="Isa Almosnino"
-											title="Isa Almosnino, Partner"
-											class="avatar"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
-											width="130"
-											height="130"
-										/>
-										<img
-											data-avatar-for-person-id="47863987"
-											alt="N. Dan Almosnino"
-											title="N. Dan Almosnino, Noam Inc"
-											class="avatar"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
-											width="130"
-											height="130"
-										/>
-									</section>
-								</div>
-							</a>
+                  <section
+                    class="card__people avatar-group avatar-group--x-small"
+                    aria-hidden="true"
+                  >
+                    <img
+                      data-avatar-for-person-id="48260173"
+                      alt="Isa Almosnino"
+                      title="Isa Almosnino, Partner"
+                      class="avatar"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
+                      width="130"
+                      height="130"
+                    />
+                    <img
+                      data-avatar-for-person-id="47863987"
+                      alt="N. Dan Almosnino"
+                      title="N. Dan Almosnino, Noam Inc"
+                      class="avatar"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+                      width="130"
+                      height="130"
+                    />
+                  </section>
+                </div>
+              </a>
 
-							<div class="card__settings" data-role="project_settings">
-								<details class="colorpicker">
-									<summary class="colorpicker__trigger">
-										<img
-											alt="Choose a color"
-											class="svg-icon"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
-										/>
-									</summary>
-								</details>
+              <div class="card__settings" data-role="project_settings">
+                <details class="colorpicker">
+                  <summary class="colorpicker__trigger">
+                    <img
+                      alt="Choose a color"
+                      class="svg-icon"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
+                    />
+                  </summary>
+                </details>
 
-								<div class="knob" aria-label="Toggle 'At a glance'">
-									<svg class="svg-icon knob__icon" aria-hidden="true">
-										<use href="assets/icons/prototype-sprites.svg#knob-0"></use>
-									</svg>
-								</div>
+                <!-- 
+									I imagine the knob could work like the color-picker with a URL (and Turbo would enhance it):
+									color-picker: "/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
+									knob: ".../user_customizations?user_customization%5Bdetail-to-show%5D=[detail]"
+								-->
+                <a
+                  href="#"
+                  class="knob"
+                  aria-label="Toggle 'At a glance'"
+                  data-level="0"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="svg-icon knob__icon"
+                  >
+                    <path
+                      d="M11.2065 4.91928C11.0224 4.73566 10.9077 4.49386 10.8819 4.23511C10.8561 3.97636 10.9208 3.71668 11.0651 3.50032C11.2093 3.28397 11.4242 3.12435 11.6729 3.04866C11.9217 2.97297 12.189 2.9859 12.4293 3.08525C12.6696 3.1846 12.868 3.36422 12.9907 3.59348C13.1134 3.82275 13.1528 4.08747 13.1022 4.34252C13.0515 4.59758 12.914 4.82717 12.713 4.99216C12.512 5.15716 12.26 5.24734 12 5.24734C11.7025 5.24739 11.4171 5.12941 11.2065 4.91928ZM20 6.97463C20 7.1966 19.9342 7.41358 19.8109 7.59814C19.6875 7.7827 19.5123 7.92655 19.3072 8.01149C19.1021 8.09644 18.8765 8.11866 18.6588 8.07536C18.4411 8.03205 18.2411 7.92517 18.0841 7.76821C17.9272 7.61126 17.8203 7.41128 17.777 7.19358C17.7337 6.97587 17.7559 6.75022 17.8408 6.54515C17.9258 6.34007 18.0696 6.16479 18.2542 6.04148C18.4388 5.91816 18.6557 5.85233 18.8777 5.85233C19.1753 5.85266 19.4605 5.971 19.6709 6.18141C19.8813 6.39181 19.9997 6.67708 20 6.97463ZM4 6.97463C4 6.75266 4.06582 6.53568 4.18914 6.35112C4.31246 6.16656 4.48774 6.02271 4.69281 5.93776C4.89788 5.85282 5.12354 5.8306 5.34124 5.8739C5.55895 5.9172 5.75892 6.02409 5.91588 6.18105C6.07283 6.338 6.17972 6.53798 6.22302 6.75568C6.26633 6.97338 6.2441 7.19904 6.15916 7.40411C6.07422 7.60918 5.93037 7.78446 5.74581 7.90778C5.56125 8.0311 5.34426 8.09692 5.12229 8.09692C4.82474 8.0966 4.53947 7.97825 4.32907 7.76785C4.11867 7.55745 4.00032 7.27218 4 6.97463Z"
+                      fill="black"
+                    />
+                    <path
+                      class="knob__dial"
+                      d="M6.01804 14.062C6.05935 15.2451 6.45057 16.3894 7.14223 17.3502C7.83388 18.311 8.79491 19.0451 9.90377 19.4596C11.0126 19.8742 12.2195 19.9507 13.3719 19.6794C14.5242 19.408 15.5702 18.8011 16.3775 17.9353C17.1849 17.0695 17.7174 15.9837 17.9077 14.8153C18.098 13.6468 17.9375 12.4482 17.4466 11.3709C16.9557 10.2937 16.1563 9.38623 15.1497 8.76328C14.143 8.14033 12.9742 7.82988 11.7911 7.8712C10.2052 7.92839 8.70674 8.61231 7.62447 9.77291C6.54219 10.9335 5.96447 12.476 6.01804 14.062ZM16.4864 13.6965C16.5126 14.4031 16.3714 15.106 16.0744 15.7478C15.7774 16.3895 15.3331 16.9521 14.7775 17.3895C14.2219 17.827 13.5708 18.127 12.8772 18.2652C12.1837 18.4033 11.4674 18.3757 10.7865 18.1845C10.1057 17.9933 9.4797 17.6439 8.95949 17.1649C8.43927 16.6859 8.03957 16.0908 7.79296 15.4281C7.54634 14.7653 7.45979 14.0536 7.54034 13.3511C7.6209 12.6485 7.86629 11.975 8.25651 11.3852L8.39434 11.5137L10.7159 13.6786C10.7877 13.7461 10.872 13.7988 10.9642 13.8336C11.0564 13.8684 11.1545 13.8846 11.253 13.8814C11.3514 13.8782 11.4483 13.8555 11.538 13.8148C11.6276 13.774 11.7084 13.716 11.7756 13.6439C11.8428 13.5719 11.8951 13.4873 11.9295 13.3949C11.9639 13.3026 11.9797 13.2044 11.9761 13.106C11.9724 13.0075 11.9494 12.9108 11.9082 12.8213C11.8671 12.7318 11.8087 12.6513 11.7363 12.5844L9.41477 10.4195L9.27694 10.291C9.93049 9.78909 10.7097 9.47708 11.5291 9.38925C12.3484 9.30141 13.1761 9.44115 13.9212 9.7931C14.6662 10.145 15.2999 10.6956 15.7524 11.3842C16.205 12.0728 16.459 12.8729 16.4864 13.6965Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
 
-								<form
-									class="button_to"
-									method="post"
-									action="/5926919/buckets/42074826/pins"
-								>
-									<input
-										type="hidden"
-										name="_method"
-										value="delete"
-										autocomplete="off"
-									/><button
-										class="card__pin card__pin--bookmarked"
-										aria-label="Unpin"
-										type="submit"
-									>
-										<svg
-											class="svg-icon svg-icon--pin-solid"
-											aria-hidden="true"
-										>
-											<use href="assets/icons/sprites.svg#pin-solid"></use>
-										</svg></button
-									><input
-										type="hidden"
-										name="authenticity_token"
-										value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
-										autocomplete="off"
-									/>
-								</form>
+                <form
+                  class="button_to"
+                  method="post"
+                  action="/5926919/buckets/42074826/pins"
+                >
+                  <input
+                    type="hidden"
+                    name="_method"
+                    value="delete"
+                    autocomplete="off"
+                  /><button
+                    class="card__pin card__pin--bookmarked"
+                    aria-label="Unpin"
+                    type="submit"
+                  >
+                    <svg
+                      class="svg-icon svg-icon--pin-solid"
+                      aria-hidden="true"
+                    >
+                      <use href="assets/icons/sprites.svg#pin-solid"></use>
+                    </svg></button
+                  ><input
+                    type="hidden"
+                    name="authenticity_token"
+                    value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
+                    autocomplete="off"
+                  />
+                </form>
 
-								<form
-									class="button_to"
-									method="post"
-									action="/5926919/buckets/42074826/pins"
-								>
-									<button
-										class="card__pin card__pin--unbookmarked"
-										aria-label="Pin"
-										type="submit"
-									>
-										<svg
-											class="svg-icon svg-icon--pin-solid"
-											aria-hidden="true"
-										>
-											<use href="assets/icons/sprites.svg#pin-solid"></use>
-										</svg></button
-									><input
-										type="hidden"
-										name="authenticity_token"
-										value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
-										autocomplete="off"
-									/>
-								</form>
-							</div>
-						</article>
+                <form
+                  class="button_to"
+                  method="post"
+                  action="/5926919/buckets/42074826/pins"
+                >
+                  <button
+                    class="card__pin card__pin--unbookmarked"
+                    aria-label="Pin"
+                    type="submit"
+                  >
+                    <svg
+                      class="svg-icon svg-icon--pin-solid"
+                      aria-hidden="true"
+                    >
+                      <use href="assets/icons/sprites.svg#pin-solid"></use>
+                    </svg></button
+                  ><input
+                    type="hidden"
+                    name="authenticity_token"
+                    value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
+            </article>
 
-						<article class="card card--project card--project-topic">
-							<a class="card__link" href="#">
-								<div class="card__content">
-									<section>
-										<h2
-											class="card__title flush"
-											title=""
-											data-role="content_filter_text"
-										>
-											Klara
-										</h2>
+            <article class="card card--project card--project-topic">
+              <a class="card__link" href="#">
+                <div class="card__content">
+                  <section>
+                    <h2
+                      class="card__title flush"
+                      title=""
+                      data-role="content_filter_text"
+                    >
+                      Klara
+                    </h2>
 
-										<p
-											class="card__description flush"
-											title=""
-											data-role="content_filter_text"
-										>
-											Managing all things for Klara!
-										</p>
-									</section>
+                    <p
+                      class="card__description flush"
+                      title=""
+                      data-role="content_filter_text"
+                    >
+                      Managing all things for Klara!
+                    </p>
+                  </section>
 
-									<section
-										class="card__people avatar-group avatar-group--x-small"
-										aria-hidden="true"
-									>
-										<img
-											data-avatar-for-person-id="48260173"
-											alt="Isa Almosnino"
-											title="Isa Almosnino, Partner"
-											class="avatar"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
-											width="130"
-											height="130"
-										/>
-										<img
-											data-avatar-for-person-id="47863987"
-											alt="N. Dan Almosnino"
-											title="N. Dan Almosnino, Noam Inc"
-											class="avatar"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
-											width="130"
-											height="130"
-										/>
-									</section>
-								</div>
-							</a>
+                  <section
+                    class="card__people avatar-group avatar-group--x-small"
+                    aria-hidden="true"
+                  >
+                    <img
+                      data-avatar-for-person-id="48260173"
+                      alt="Isa Almosnino"
+                      title="Isa Almosnino, Partner"
+                      class="avatar"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
+                      width="130"
+                      height="130"
+                    />
+                    <img
+                      data-avatar-for-person-id="47863987"
+                      alt="N. Dan Almosnino"
+                      title="N. Dan Almosnino, Noam Inc"
+                      class="avatar"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+                      width="130"
+                      height="130"
+                    />
+                  </section>
+                </div>
+              </a>
 
-							<div class="card__settings" data-role="project_settings">
-								<details class="colorpicker">
-									<summary class="colorpicker__trigger">
-										<img
-											alt="Choose a color"
-											class="svg-icon"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
-										/>
-									</summary>
-									<div class="colorpicker__menu">
-										<div class="txt--xxx-small txt--w-medium">Color me in!</div>
-										<ul class="colorpicker__swatches list--unbulleted">
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="white"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--white"
-													aria-label="white"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=white"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="yellow"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--yellow"
-													aria-label="yellow"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=yellow"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="orange"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--orange"
-													aria-label="orange"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="red"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--red"
-													aria-label="red"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=red"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="pink"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--pink"
-													aria-label="pink"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=pink"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="purple"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--purple"
-													aria-label="purple"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=purple"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="blue"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--blue"
-													aria-label="blue"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=blue"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="green"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--green"
-													aria-label="green"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=green"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="brown"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--brown"
-													aria-label="brown"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=brown"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="gray"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--gray"
-													aria-label="gray"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=gray"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-										</ul>
-									</div>
-								</details>
+              <div class="card__settings" data-role="project_settings">
+                <details class="colorpicker">
+                  <summary class="colorpicker__trigger">
+                    <img
+                      alt="Choose a color"
+                      class="svg-icon"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
+                    />
+                  </summary>
+                  <!-- ...colorpicker__menu -->
+                </details>
 
-								<div class="knob" aria-label="Toggle 'At a glance'">
-									<svg class="svg-icon knob__icon" aria-hidden="true">
-										<use href="assets/icons/prototype-sprites.svg#knob-0"></use>
-									</svg>
-								</div>
+                <a
+                  href="#"
+                  class="knob"
+                  aria-label="Toggle 'At a glance'"
+                  data-level="0"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="svg-icon knob__icon"
+                  >
+                    <path
+                      d="M11.2065 4.91928C11.0224 4.73566 10.9077 4.49386 10.8819 4.23511C10.8561 3.97636 10.9208 3.71668 11.0651 3.50032C11.2093 3.28397 11.4242 3.12435 11.6729 3.04866C11.9217 2.97297 12.189 2.9859 12.4293 3.08525C12.6696 3.1846 12.868 3.36422 12.9907 3.59348C13.1134 3.82275 13.1528 4.08747 13.1022 4.34252C13.0515 4.59758 12.914 4.82717 12.713 4.99216C12.512 5.15716 12.26 5.24734 12 5.24734C11.7025 5.24739 11.4171 5.12941 11.2065 4.91928ZM20 6.97463C20 7.1966 19.9342 7.41358 19.8109 7.59814C19.6875 7.7827 19.5123 7.92655 19.3072 8.01149C19.1021 8.09644 18.8765 8.11866 18.6588 8.07536C18.4411 8.03205 18.2411 7.92517 18.0841 7.76821C17.9272 7.61126 17.8203 7.41128 17.777 7.19358C17.7337 6.97587 17.7559 6.75022 17.8408 6.54515C17.9258 6.34007 18.0696 6.16479 18.2542 6.04148C18.4388 5.91816 18.6557 5.85233 18.8777 5.85233C19.1753 5.85266 19.4605 5.971 19.6709 6.18141C19.8813 6.39181 19.9997 6.67708 20 6.97463ZM4 6.97463C4 6.75266 4.06582 6.53568 4.18914 6.35112C4.31246 6.16656 4.48774 6.02271 4.69281 5.93776C4.89788 5.85282 5.12354 5.8306 5.34124 5.8739C5.55895 5.9172 5.75892 6.02409 5.91588 6.18105C6.07283 6.338 6.17972 6.53798 6.22302 6.75568C6.26633 6.97338 6.2441 7.19904 6.15916 7.40411C6.07422 7.60918 5.93037 7.78446 5.74581 7.90778C5.56125 8.0311 5.34426 8.09692 5.12229 8.09692C4.82474 8.0966 4.53947 7.97825 4.32907 7.76785C4.11867 7.55745 4.00032 7.27218 4 6.97463Z"
+                      fill="black"
+                    />
+                    <path
+                      class="knob__dial"
+                      d="M6.01804 14.062C6.05935 15.2451 6.45057 16.3894 7.14223 17.3502C7.83388 18.311 8.79491 19.0451 9.90377 19.4596C11.0126 19.8742 12.2195 19.9507 13.3719 19.6794C14.5242 19.408 15.5702 18.8011 16.3775 17.9353C17.1849 17.0695 17.7174 15.9837 17.9077 14.8153C18.098 13.6468 17.9375 12.4482 17.4466 11.3709C16.9557 10.2937 16.1563 9.38623 15.1497 8.76328C14.143 8.14033 12.9742 7.82988 11.7911 7.8712C10.2052 7.92839 8.70674 8.61231 7.62447 9.77291C6.54219 10.9335 5.96447 12.476 6.01804 14.062ZM16.4864 13.6965C16.5126 14.4031 16.3714 15.106 16.0744 15.7478C15.7774 16.3895 15.3331 16.9521 14.7775 17.3895C14.2219 17.827 13.5708 18.127 12.8772 18.2652C12.1837 18.4033 11.4674 18.3757 10.7865 18.1845C10.1057 17.9933 9.4797 17.6439 8.95949 17.1649C8.43927 16.6859 8.03957 16.0908 7.79296 15.4281C7.54634 14.7653 7.45979 14.0536 7.54034 13.3511C7.6209 12.6485 7.86629 11.975 8.25651 11.3852L8.39434 11.5137L10.7159 13.6786C10.7877 13.7461 10.872 13.7988 10.9642 13.8336C11.0564 13.8684 11.1545 13.8846 11.253 13.8814C11.3514 13.8782 11.4483 13.8555 11.538 13.8148C11.6276 13.774 11.7084 13.716 11.7756 13.6439C11.8428 13.5719 11.8951 13.4873 11.9295 13.3949C11.9639 13.3026 11.9797 13.2044 11.9761 13.106C11.9724 13.0075 11.9494 12.9108 11.9082 12.8213C11.8671 12.7318 11.8087 12.6513 11.7363 12.5844L9.41477 10.4195L9.27694 10.291C9.93049 9.78909 10.7097 9.47708 11.5291 9.38925C12.3484 9.30141 13.1761 9.44115 13.9212 9.7931C14.6662 10.145 15.2999 10.6956 15.7524 11.3842C16.205 12.0728 16.459 12.8729 16.4864 13.6965Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
 
-								<form
-									class="button_to"
-									method="post"
-									action="/5926919/buckets/42074826/pins"
-								>
-									<input
-										type="hidden"
-										name="_method"
-										value="delete"
-										autocomplete="off"
-									/><button
-										class="card__pin card__pin--bookmarked"
-										aria-label="Unpin"
-										type="submit"
-									>
-										<svg
-											class="svg-icon svg-icon--pin-solid"
-											aria-hidden="true"
-										>
-											<use href="assets/icons/sprites.svg#pin-solid"></use>
-										</svg></button
-									><input
-										type="hidden"
-										name="authenticity_token"
-										value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
-										autocomplete="off"
-									/>
-								</form>
-								<form
-									class="button_to"
-									method="post"
-									action="/5926919/buckets/42074826/pins"
-								>
-									<button
-										class="card__pin card__pin--unbookmarked"
-										aria-label="Pin"
-										type="submit"
-									>
-										<svg
-											class="svg-icon svg-icon--pin-solid"
-											aria-hidden="true"
-										>
-											<use href="assets/icons/sprites.svg#pin-solid"></use>
-										</svg></button
-									><input
-										type="hidden"
-										name="authenticity_token"
-										value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
-										autocomplete="off"
-									/>
-								</form>
-							</div>
-						</article>
+                <form
+                  class="button_to"
+                  method="post"
+                  action="/5926919/buckets/42074826/pins"
+                >
+                  <input
+                    type="hidden"
+                    name="_method"
+                    value="delete"
+                    autocomplete="off"
+                  /><button
+                    class="card__pin card__pin--bookmarked"
+                    aria-label="Unpin"
+                    type="submit"
+                  >
+                    <svg
+                      class="svg-icon svg-icon--pin-solid"
+                      aria-hidden="true"
+                    >
+                      <use href="assets/icons/sprites.svg#pin-solid"></use>
+                    </svg></button
+                  ><input
+                    type="hidden"
+                    name="authenticity_token"
+                    value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
+                    autocomplete="off"
+                  />
+                </form>
 
-						<article class="card card--project card--project-topic">
-							<a class="card__link" href="#">
-								<div class="card__content">
-									<section>
-										<h2
-											class="card__title flush"
-											title=""
-											data-role="content_filter_text"
-										>
-											At-home Exercise
-										</h2>
+                <form
+                  class="button_to"
+                  method="post"
+                  action="/5926919/buckets/42074826/pins"
+                >
+                  <button
+                    class="card__pin card__pin--unbookmarked"
+                    aria-label="Pin"
+                    type="submit"
+                  >
+                    <svg
+                      class="svg-icon svg-icon--pin-solid"
+                      aria-hidden="true"
+                    >
+                      <use href="assets/icons/sprites.svg#pin-solid"></use>
+                    </svg></button
+                  ><input
+                    type="hidden"
+                    name="authenticity_token"
+                    value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
+            </article>
 
-										<p
-											class="card__description flush"
-											title=""
-											data-role="content_filter_text"
-										>
-											Rethinking the Basecamp home screen.
-										</p>
-									</section>
+            <article class="card card--project card--project-topic">
+              <a class="card__link" href="#">
+                <div class="card__content">
+                  <section>
+                    <h2
+                      class="card__title flush"
+                      title=""
+                      data-role="content_filter_text"
+                    >
+                      At-home Exercise
+                    </h2>
 
-									<section
-										class="card__people avatar-group avatar-group--x-small"
-										aria-hidden="true"
-									>
-										<img
-											data-avatar-for-person-id="48260173"
-											alt="Isa Almosnino"
-											title="Isa Almosnino, Partner"
-											class="avatar"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
-											width="130"
-											height="130"
-										/>
-										<img
-											data-avatar-for-person-id="47863987"
-											alt="N. Dan Almosnino"
-											title="N. Dan Almosnino, Noam Inc"
-											class="avatar"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
-											width="130"
-											height="130"
-										/>
-									</section>
-								</div>
-							</a>
+                    <p
+                      class="card__description flush"
+                      title=""
+                      data-role="content_filter_text"
+                    >
+                      Rethinking the Basecamp home screen.
+                    </p>
+                  </section>
 
-							<div class="card__settings" data-role="project_settings">
-								<details class="colorpicker">
-									<summary class="colorpicker__trigger">
-										<img
-											alt="Choose a color"
-											class="svg-icon"
-											src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
-										/>
-									</summary>
-									<div class="colorpicker__menu">
-										<div class="txt--xxx-small txt--w-medium">Color me in!</div>
-										<ul class="colorpicker__swatches list--unbulleted">
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="white"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--white"
-													aria-label="white"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=white"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="yellow"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--yellow"
-													aria-label="yellow"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=yellow"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="orange"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--orange"
-													aria-label="orange"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="red"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--red"
-													aria-label="red"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=red"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="pink"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--pink"
-													aria-label="pink"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=pink"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="purple"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--purple"
-													aria-label="purple"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=purple"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="blue"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--blue"
-													aria-label="blue"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=blue"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="green"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--green"
-													aria-label="green"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=green"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="brown"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--brown"
-													aria-label="brown"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=brown"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-											<li>
-												<a
-													data-turbo-method="put"
-													data-action="color-picker#pick details#close"
-													data-color-picker-color-param="gray"
-													data-color-picker-target="swatch"
-													class="colorpicker__swatch colorpicker__swatch--gray"
-													aria-label="gray"
-													aria-current="false"
-													role="button"
-													href="/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=gray"
-													><svg
-														class="svg-icon svg-icon--check-solid"
-														aria-hidden="true"
-													>
-														<use
-															href="/assets/icons/sprites-58db03ea7cb30d39556f89b77a3cb3889e6df66a44ff725ca8d3afae7951f735.svg#check-solid"
-														></use></svg
-												></a>
-											</li>
-										</ul>
-									</div>
-								</details>
+                  <section
+                    class="card__people avatar-group avatar-group--x-small"
+                    aria-hidden="true"
+                  >
+                    <img
+                      data-avatar-for-person-id="48260173"
+                      alt="Isa Almosnino"
+                      title="Isa Almosnino, Partner"
+                      class="avatar"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBE1k4AI=--7e9bbf2afb328d6f805d686358028bb3d08ce6cf/avatar?v=1"
+                      width="130"
+                      height="130"
+                    />
+                    <img
+                      data-avatar-for-person-id="47863987"
+                      alt="N. Dan Almosnino"
+                      title="N. Dan Almosnino, Noam Inc"
+                      class="avatar"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+                      width="130"
+                      height="130"
+                    />
+                  </section>
+                </div>
+              </a>
 
-								<div class="knob" aria-label="Toggle 'At a glance'">
-									<svg class="svg-icon knob__icon" aria-hidden="true">
-										<use href="assets/icons/prototype-sprites.svg#knob-0"></use>
-									</svg>
-								</div>
+              <div class="card__settings" data-role="project_settings">
+                <details class="colorpicker">
+                  <summary class="colorpicker__trigger">
+                    <img
+                      alt="Choose a color"
+                      class="svg-icon"
+                      src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/color-wheel-b6d46edf6d373cc5687f37e192d4969e1d7cdd971fcafcdf09edb03da7fc391b.svg"
+                    />
+                  </summary>
+                  <!-- ...colorpicker__menu -->
+                </details>
 
-								<form
-									class="button_to"
-									method="post"
-									action="/5926919/buckets/42074826/pins"
-								>
-									<input
-										type="hidden"
-										name="_method"
-										value="delete"
-										autocomplete="off"
-									/><button
-										class="card__pin card__pin--bookmarked"
-										aria-label="Unpin"
-										type="submit"
-									>
-										<svg
-											class="svg-icon svg-icon--pin-solid"
-											aria-hidden="true"
-										>
-											<use href="assets/icons/sprites.svg#pin-solid"></use>
-										</svg></button
-									><input
-										type="hidden"
-										name="authenticity_token"
-										value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
-										autocomplete="off"
-									/>
-								</form>
-								<form
-									class="button_to"
-									method="post"
-									action="/5926919/buckets/42074826/pins"
-								>
-									<button
-										class="card__pin card__pin--unbookmarked"
-										aria-label="Pin"
-										type="submit"
-									>
-										<svg
-											class="svg-icon svg-icon--pin-solid"
-											aria-hidden="true"
-										>
-											<use href="assets/icons/sprites.svg#pin-solid"></use>
-										</svg></button
-									><input
-										type="hidden"
-										name="authenticity_token"
-										value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
-										autocomplete="off"
-									/>
-								</form>
-							</div>
-						</article>
-					</span>
-				</div>
-			</section>
-			<section class="project-index__mystuff"></section>
-		</div>
-		<!-- <script src="js/app.js"></script> -->
-	</body>
+                <a
+                  href="#"
+                  class="knob"
+                  aria-label="Toggle 'At a glance'"
+                  data-level="0"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="svg-icon knob__icon"
+                  >
+                    <path
+                      d="M11.2065 4.91928C11.0224 4.73566 10.9077 4.49386 10.8819 4.23511C10.8561 3.97636 10.9208 3.71668 11.0651 3.50032C11.2093 3.28397 11.4242 3.12435 11.6729 3.04866C11.9217 2.97297 12.189 2.9859 12.4293 3.08525C12.6696 3.1846 12.868 3.36422 12.9907 3.59348C13.1134 3.82275 13.1528 4.08747 13.1022 4.34252C13.0515 4.59758 12.914 4.82717 12.713 4.99216C12.512 5.15716 12.26 5.24734 12 5.24734C11.7025 5.24739 11.4171 5.12941 11.2065 4.91928ZM20 6.97463C20 7.1966 19.9342 7.41358 19.8109 7.59814C19.6875 7.7827 19.5123 7.92655 19.3072 8.01149C19.1021 8.09644 18.8765 8.11866 18.6588 8.07536C18.4411 8.03205 18.2411 7.92517 18.0841 7.76821C17.9272 7.61126 17.8203 7.41128 17.777 7.19358C17.7337 6.97587 17.7559 6.75022 17.8408 6.54515C17.9258 6.34007 18.0696 6.16479 18.2542 6.04148C18.4388 5.91816 18.6557 5.85233 18.8777 5.85233C19.1753 5.85266 19.4605 5.971 19.6709 6.18141C19.8813 6.39181 19.9997 6.67708 20 6.97463ZM4 6.97463C4 6.75266 4.06582 6.53568 4.18914 6.35112C4.31246 6.16656 4.48774 6.02271 4.69281 5.93776C4.89788 5.85282 5.12354 5.8306 5.34124 5.8739C5.55895 5.9172 5.75892 6.02409 5.91588 6.18105C6.07283 6.338 6.17972 6.53798 6.22302 6.75568C6.26633 6.97338 6.2441 7.19904 6.15916 7.40411C6.07422 7.60918 5.93037 7.78446 5.74581 7.90778C5.56125 8.0311 5.34426 8.09692 5.12229 8.09692C4.82474 8.0966 4.53947 7.97825 4.32907 7.76785C4.11867 7.55745 4.00032 7.27218 4 6.97463Z"
+                      fill="black"
+                    />
+                    <path
+                      class="knob__dial"
+                      d="M6.01804 14.062C6.05935 15.2451 6.45057 16.3894 7.14223 17.3502C7.83388 18.311 8.79491 19.0451 9.90377 19.4596C11.0126 19.8742 12.2195 19.9507 13.3719 19.6794C14.5242 19.408 15.5702 18.8011 16.3775 17.9353C17.1849 17.0695 17.7174 15.9837 17.9077 14.8153C18.098 13.6468 17.9375 12.4482 17.4466 11.3709C16.9557 10.2937 16.1563 9.38623 15.1497 8.76328C14.143 8.14033 12.9742 7.82988 11.7911 7.8712C10.2052 7.92839 8.70674 8.61231 7.62447 9.77291C6.54219 10.9335 5.96447 12.476 6.01804 14.062ZM16.4864 13.6965C16.5126 14.4031 16.3714 15.106 16.0744 15.7478C15.7774 16.3895 15.3331 16.9521 14.7775 17.3895C14.2219 17.827 13.5708 18.127 12.8772 18.2652C12.1837 18.4033 11.4674 18.3757 10.7865 18.1845C10.1057 17.9933 9.4797 17.6439 8.95949 17.1649C8.43927 16.6859 8.03957 16.0908 7.79296 15.4281C7.54634 14.7653 7.45979 14.0536 7.54034 13.3511C7.6209 12.6485 7.86629 11.975 8.25651 11.3852L8.39434 11.5137L10.7159 13.6786C10.7877 13.7461 10.872 13.7988 10.9642 13.8336C11.0564 13.8684 11.1545 13.8846 11.253 13.8814C11.3514 13.8782 11.4483 13.8555 11.538 13.8148C11.6276 13.774 11.7084 13.716 11.7756 13.6439C11.8428 13.5719 11.8951 13.4873 11.9295 13.3949C11.9639 13.3026 11.9797 13.2044 11.9761 13.106C11.9724 13.0075 11.9494 12.9108 11.9082 12.8213C11.8671 12.7318 11.8087 12.6513 11.7363 12.5844L9.41477 10.4195L9.27694 10.291C9.93049 9.78909 10.7097 9.47708 11.5291 9.38925C12.3484 9.30141 13.1761 9.44115 13.9212 9.7931C14.6662 10.145 15.2999 10.6956 15.7524 11.3842C16.205 12.0728 16.459 12.8729 16.4864 13.6965Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+
+                <form
+                  class="button_to"
+                  method="post"
+                  action="/5926919/buckets/42074826/pins"
+                >
+                  <input
+                    type="hidden"
+                    name="_method"
+                    value="delete"
+                    autocomplete="off"
+                  /><button
+                    class="card__pin card__pin--bookmarked"
+                    aria-label="Unpin"
+                    type="submit"
+                  >
+                    <svg
+                      class="svg-icon svg-icon--pin-solid"
+                      aria-hidden="true"
+                    >
+                      <use href="assets/icons/sprites.svg#pin-solid"></use>
+                    </svg></button
+                  ><input
+                    type="hidden"
+                    name="authenticity_token"
+                    value="4Jt0XyafVJwkV0iImZQoNyAoPVJ9yX-L8SvkR4hc6aNuFelaA0Bxlh70Ss1Oe747jPgha8wAkHOdkipq7vX56g"
+                    autocomplete="off"
+                  />
+                </form>
+
+                <form
+                  class="button_to"
+                  method="post"
+                  action="/5926919/buckets/42074826/pins"
+                >
+                  <button
+                    class="card__pin card__pin--unbookmarked"
+                    aria-label="Pin"
+                    type="submit"
+                  >
+                    <svg
+                      class="svg-icon svg-icon--pin-solid"
+                      aria-hidden="true"
+                    >
+                      <use href="assets/icons/sprites.svg#pin-solid"></use>
+                    </svg></button
+                  ><input
+                    type="hidden"
+                    name="authenticity_token"
+                    value="hRqyx7UmrEbsFtQ-abBIIK0lYa5Ke57BrLz5bZy2caVaOEubah89XUZ622jTTcW_ExK8hH89hSzH4se-FyWTag"
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
+            </article>
+          </span>
+        </div>
+      </section>
+      <section class="project-index__mystuff"></section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
