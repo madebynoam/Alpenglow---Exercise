@@ -72,6 +72,31 @@
     --color-slate-90: var(--color-ink-90);
     --color-slate-100: var(--color-ink-100);
     --color-slate: var(--color-ink-60);
+
+    --hsl-green: 148.4, 68.8%, 31.4%;
+    --color-green-10: hsl(102, 55.6%, 96.5%);
+    --color-green-20: hsl(105, 55.6%, 92.9%);
+    --color-green-30: hsl(110.5, 54.3%, 86.3%);
+    --color-green-40: hsl(123, 46.2%, 74.5%);
+    --color-green-50: hsl(135.6, 39.7%, 52.5%);
+    --color-green-60: hsl(var(--hsl-green));
+    --color-green-70: hsl(149.3, 68.2%, 25.9%);
+    --color-green-80: hsl(148.2, 55.1%, 17.5%);
+    --color-green-90: hsl(146.7, 40.3%, 13.1%);
+    --color-green-100: hsl(144, 27.3%, 10.8%);
+    --color-green: var(--color-green-60);
+
+    --tint-ink-0: hsla(var(--hsl-ink), 0);
+    --tint-ink-2: hsla(var(--hsl-ink), 0.02);
+    --tint-ink-3: hsla(var(--hsl-ink), 0.03);
+    --tint-ink-5: hsla(var(--hsl-ink), 0.05);
+    --tint-ink-10: hsla(var(--hsl-ink), 0.10);
+    --tint-ink-15: hsla(var(--hsl-ink), 0.15);
+    --tint-ink-20: hsla(var(--hsl-ink), 0.20);
+    --tint-ink-25: hsla(var(--hsl-ink), 0.25);
+    --tint-ink-35: hsla(var(--hsl-ink), 0.35);
+    --tint-ink-50: hsla(var(--hsl-ink), 0.50);
+    --tint-ink-75: hsla(var(--hsl-ink), 0.75);
 }
 
 @media (prefers-color-scheme: dark) {

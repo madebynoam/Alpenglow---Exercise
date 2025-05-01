@@ -23,6 +23,34 @@
     padding: 0 .75ch;
 }
 
+.decorated--matched {
+    color: inherit !important;
+    text-decoration: underline
+}
+
+.flex {
+    display: flex
+;
+}
+
+.flex-center-justify {
+    justify-content: center;
+}
+
+.flex--gap {
+    gap: var(--gap, 0.8rem);
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+    .hide_on_mobile {
+        display: none;
+    }
+}
+
 .push {
     margin: 1.25em !important
 }

@@ -10,7 +10,17 @@
 		<title></title>
 
 		<link rel="stylesheet" href="../assets/stylesheets/reset.css" />
-		<!-- <link rel="stylesheet" href="assets/stylesheets/style.css" /> -->
+		<link rel="stylesheet" href="../assets/stylesheets/colors.css" />
+		<link rel="stylesheet" href="../assets/stylesheets/base.css" />
+		<link rel="stylesheet" href="../assets/stylesheets/text.css" />
+		<link rel="stylesheet" href="../assets/stylesheets/utils.css" />
+
+		<link rel="stylesheet" href="../assets/stylesheets/components/nav.css" />
+		<link rel="stylesheet" href="../assets/stylesheets/components/panel.css" />
+		<link
+			rel="stylesheet"
+			href="../assets/stylesheets/components/buttons.css"
+		/>
 
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -21,7 +31,44 @@
 	</head>
 
 	<body>
-		<p>Hello world!</p>
+		<div class="nav">
+			<nav></nav>
+		</div>
+		<div class="panel">
+			<header class="centered">
+				<div class="flex flex-center-justify">
+					<h1 class="push_quarter--ends">N. Dan .Works</h1>
+				</div>
+				<div
+					class="flex flex-wrap flex--gap flex-center-justify push_half--top"
+				>
+					<a class="flush btn btn--primary" href="#">Make a new project</a>
+					<a class="flush btn btn--primary" href="#">Invite people</a>
+				</div>
+				<p class="txt--x-small push--ends centered">
+					<a class="decorated decorated--matched" href="#"
+						>View all projects in a list</a
+					>
+					·
+					<a class="decorated decorated--matched" href="#">View templates</a>
+					<span class="hide_on_mobile">
+						· Press<a
+							href="#jump-menu"
+							class="btn__keyboard-shortcut txt--ink"
+							tabindex="0"
+							data-turbo="false"
+							data-behavior="show_jump_menu_button"
+							><span data-role="jump-menu-modifier-key">⌘</span>J</a
+						>
+						anytime to jump
+					</span>
+				</p>
+			</header>
+			<section class="push--top">
+				<div class="card-grid card-grid--projects"></div>
+			</section>
+			<section class="project-index__mystuff"></section>
+		</div>
 		<!-- <script src="js/app.js"></script> -->
 	</body>
 </html>
