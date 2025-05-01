@@ -1,0 +1,14 @@
+{
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": true,
+	"printWidth": 80,
+	"overrides": [
+		{
+			"files": "*.css",
+			"options": {
+				"printWidth": 999
+			}
+		}
+	]
+}
