@@ -6,8 +6,7 @@
   transition: opacity 150ms;
 }
 
-.knob:hover,
-.knob:focus {
+.knob:hover {
   opacity: 1;
 }
 
