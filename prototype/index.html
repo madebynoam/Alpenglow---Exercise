@@ -27,6 +27,10 @@
     <link rel="stylesheet" href="../assets/stylesheets/colorpicker.css" />
     <link rel="stylesheet" href="../assets/stylesheets/preview.css" />
     <link rel="stylesheet" href="../assets/stylesheets/todo.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/stylesheets/components/view-options.css"
+    />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -51,32 +55,51 @@
           <a class="flush btn btn--primary" href="#">Make a new project</a>
           <a class="flush btn btn--primary" href="#">Invite people</a>
         </div>
-        <p class="txt--x-small push--ends centered">
-          <a class="decorated decorated--matched" href="#"
-            >View all projects in a list</a
-          >
-          ·
-          <a class="decorated decorated--matched" href="#">View templates</a>
-          <span class="hide_on_mobile">
-            · Press<a
-              href="#jump-menu"
-              class="btn__keyboard-shortcut txt--ink"
-              tabindex="0"
-              data-turbo="false"
-              data-behavior="show_jump_menu_button"
-              ><span data-role="jump-menu-modifier-key">⌘</span>J</a
+        <div class="position-relative">
+          <p class="txt--x-small push--ends centered">
+            <a class="decorated decorated--matched" href="#"
+              >View all projects in a list</a
             >
-            anytime to jump
-          </span>
-        </p>
-        <details class="dropdown dropdown--view-options">
-          <summary class="btn">View as...</summary>
-          <ul role="list">
-            <li><a href="#" data-ratio="16-9" class="selected">16/9</a></li>
-            <li><a href="#" data-ratio="1-1">1:1</a></li>
-            <li><a href="#" data-ratio="4-3">4/3</a></li>
-          </ul>
-        </details>
+            ·
+            <a class="decorated decorated--matched" href="#">View templates</a>
+            <span class="hide_on_mobile">
+              · Press<a
+                href="#jump-menu"
+                class="btn__keyboard-shortcut txt--ink"
+                tabindex="0"
+                data-turbo="false"
+                data-behavior="show_jump_menu_button"
+                ><span data-role="jump-menu-modifier-key">⌘</span>J</a
+              >
+              anytime to jump
+            </span>
+          </p>
+          <details class="view-options">
+            <summary class="btn view-options__trigger">Card size...</summary>
+            <ul class="view-options__menu" role="list">
+              <li>
+                <a
+                  class="view-options__item selected"
+                  href="#"
+                  data-ratio="16-9"
+                  >Wide <span class="view-options__ratio-label">(16:9)</span></a
+                >
+              </li>
+              <li>
+                <a class="view-options__item" href="#" data-ratio="1-1"
+                  >Square
+                  <span class="view-options__ratio-label">(1:1)</span></a
+                >
+              </li>
+              <li>
+                <a class="view-options__item" href="#" data-ratio="4-3"
+                  >Compact
+                  <span class="view-options__ratio-label">(4:3)</span></a
+                >
+              </li>
+            </ul>
+          </details>
+        </div>
       </header>
       <section class="push--top">
         <div class="card-grid card-grid--projects card-grid--16-9">
@@ -597,11 +620,9 @@
     <script src="assets/js/app.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const viewOptionsDropdown = document.querySelector(
-          '.dropdown--view-options'
-        );
+        const viewOptions = document.querySelector('.view-options');
         const cardGrid = document.querySelector('.card-grid--projects');
-        const options = viewOptionsDropdown.querySelectorAll('a[data-ratio]');
+        const options = viewOptions.querySelectorAll('.view-options__item');
 
         options.forEach((option) => {
           option.addEventListener('click', (event) => {
@@ -623,11 +644,8 @@
             options.forEach((opt) => opt.classList.remove('selected'));
             option.classList.add('selected');
 
-            // Update summary text (optional)
-            // viewOptionsDropdown.querySelector('summary').textContent = `View as: ${option.textContent}`;
-
             // Close the dropdown
-            viewOptionsDropdown.removeAttribute('open');
+            viewOptions.removeAttribute('open');
           });
         });
       });
