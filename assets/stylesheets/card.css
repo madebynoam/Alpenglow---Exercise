@@ -14,6 +14,18 @@
   --card-4-col: calc((100% / 4) - (var(--gap) * 3 / 4));
 }
 
+.card-grid--16-9 .card--project {
+  aspect-ratio: 16/9;
+}
+
+.card-grid--1-1 .card--project {
+  aspect-ratio: 1/1;
+}
+
+.card-grid--4-3 .card--project {
+  aspect-ratio: 4/3;
+}
+
 .card {
   --card-color: var(--color-canvas-light);
   --card-heading-size: 1.4em;

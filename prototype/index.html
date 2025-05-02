@@ -69,9 +69,17 @@
             anytime to jump
           </span>
         </p>
+        <details class="dropdown dropdown--view-options">
+          <summary class="btn">View as...</summary>
+          <ul role="list">
+            <li><a href="#" data-ratio="16-9" class="selected">16/9</a></li>
+            <li><a href="#" data-ratio="1-1">1:1</a></li>
+            <li><a href="#" data-ratio="4-3">4/3</a></li>
+          </ul>
+        </details>
       </header>
       <section class="push--top">
-        <div class="card-grid card-grid--projects">
+        <div class="card-grid card-grid--projects card-grid--16-9">
           <span class="cards--bookmarked">
             <article class="card card--project card--project-topic">
               <a class="card__link" href="#">
@@ -587,5 +595,42 @@
       <section class="project-index__mystuff"></section>
     </div>
     <script src="assets/js/app.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const viewOptionsDropdown = document.querySelector(
+          '.dropdown--view-options'
+        );
+        const cardGrid = document.querySelector('.card-grid--projects');
+        const options = viewOptionsDropdown.querySelectorAll('a[data-ratio]');
+
+        options.forEach((option) => {
+          option.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const selectedRatio = option.getAttribute('data-ratio');
+
+            // Remove existing ratio classes
+            cardGrid.classList.remove(
+              'card-grid--16-9',
+              'card-grid--1-1',
+              'card-grid--4-3'
+            );
+
+            // Add the new ratio class
+            cardGrid.classList.add(`card-grid--${selectedRatio}`);
+
+            // Update selected state in menu
+            options.forEach((opt) => opt.classList.remove('selected'));
+            option.classList.add('selected');
+
+            // Update summary text (optional)
+            // viewOptionsDropdown.querySelector('summary').textContent = `View as: ${option.textContent}`;
+
+            // Close the dropdown
+            viewOptionsDropdown.removeAttribute('open');
+          });
+        });
+      });
+    </script>
   </body>
 </html>
