@@ -1,9 +1,12 @@
 .knob {
   --trigger-size: 2.4rem;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   /* opacity: 0.33; */
   transition: opacity 150ms;
+  right: 1.5rem;
+  bottom: 1rem;
+  z-index: 5;
 }
 
 .knob:hover {

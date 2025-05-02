@@ -338,6 +338,38 @@
                 </div>
               </a>
 
+              <a
+                href="#"
+                class="knob"
+                aria-label="Toggle 'At a glance'"
+                data-level="2"
+                style="
+                  background-color: #fff;
+                  border-radius: 100%;
+                  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+                  width: 24px;
+                  height: 24px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="19"
+                  height="10"
+                  viewBox="0 0 19 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.698975 4.93641C3.02393 2.26233 6.18104 0.961426 9.69897 0.961426C13.2169 0.961426 16.374 2.26231 18.699 4.93641L18.0273 5.51764C16.0256 3.21464 13.3649 2.02709 10.3848 1.87065C13.2069 2.41255 14.3102 5.92034 12.2543 7.97548C9.98293 10.2469 6.08405 8.62907 6.08405 5.42019C6.08405 3.67256 7.33067 2.19401 9.01305 1.87065C6.03291 2.02716 3.37211 3.2148 1.36972 5.51764L0.698975 4.93641ZM9.69897 2.83013V3.62214C10.6923 3.62214 11.4969 4.42753 11.4969 5.42011H12.289C12.2897 3.98944 11.1296 2.83013 9.69897 2.83013Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+
               <div class="card__settings" data-role="project_settings">
                 <details class="colorpicker">
                   <summary class="colorpicker__trigger">
@@ -348,43 +380,6 @@
                     />
                   </summary>
                 </details>
-
-                <!-- 
-									I imagine the knob could work like the color-picker with a URL (and Turbo would enhance it):
-									color-picker: "/5926919/buckets/42074826/user_customizations?user_customization%5Bcolor%5D=orange"
-									knob: ".../user_customizations?user_customization%5Bdetail-to-show%5D=[detail]"
-								-->
-                <a
-                  href="#"
-                  class="knob"
-                  aria-label="Toggle 'At a glance'"
-                  data-level="2"
-                  style="
-                    background-color: #fff;
-                    border-radius: 100%;
-                    /* border: 1px solid rgba(0, 0, 0, 0.1); */
-                    width: 24px;
-                    height: 24px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <svg
-                    width="19"
-                    height="10"
-                    viewBox="0 0 19 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.698975 4.93641C3.02393 2.26233 6.18104 0.961426 9.69897 0.961426C13.2169 0.961426 16.374 2.26231 18.699 4.93641L18.0273 5.51764C16.0256 3.21464 13.3649 2.02709 10.3848 1.87065C13.2069 2.41255 14.3102 5.92034 12.2543 7.97548C9.98293 10.2469 6.08405 8.62907 6.08405 5.42019C6.08405 3.67256 7.33067 2.19401 9.01305 1.87065C6.03291 2.02716 3.37211 3.2148 1.36972 5.51764L0.698975 4.93641ZM9.69897 2.83013V3.62214C10.6923 3.62214 11.4969 4.42753 11.4969 5.42011H12.289C12.2897 3.98944 11.1296 2.83013 9.69897 2.83013Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
 
                 <form
                   class="button_to"
@@ -747,6 +742,28 @@
                 </div>
               </a>
 
+              <a
+                href="#"
+                class="knob"
+                aria-label="Toggle 'At a glance'"
+                data-level="1"
+              >
+                <svg
+                  width="19"
+                  height="10"
+                  viewBox="0 0 19 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.698975 4.93641C3.02393 2.26233 6.18104 0.961426 9.69897 0.961426C13.2169 0.961426 16.374 2.26231 18.699 4.93641L18.0273 5.51764C16.0256 3.21464 13.3649 2.02709 10.3848 1.87065C13.2069 2.41255 14.3102 5.92034 12.2543 7.97548C9.98293 10.2469 6.08405 8.62907 6.08405 5.42019C6.08405 3.67256 7.33067 2.19401 9.01305 1.87065C6.03291 2.02716 3.37211 3.2148 1.36972 5.51764L0.698975 4.93641ZM9.69897 2.83013V3.62214C10.6923 3.62214 11.4969 4.42753 11.4969 5.42011H12.289C12.2897 3.98944 11.1296 2.83013 9.69897 2.83013Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+
               <div class="card__settings" data-role="project_settings">
                 <details class="colorpicker">
                   <summary class="colorpicker__trigger">
@@ -758,28 +775,6 @@
                   </summary>
                   <!-- ...colorpicker__menu -->
                 </details>
-
-                <a
-                  href="#"
-                  class="knob"
-                  aria-label="Toggle 'At a glance'"
-                  data-level="1"
-                >
-                  <svg
-                    width="19"
-                    height="10"
-                    viewBox="0 0 19 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.698975 4.93641C3.02393 2.26233 6.18104 0.961426 9.69897 0.961426C13.2169 0.961426 16.374 2.26231 18.699 4.93641L18.0273 5.51764C16.0256 3.21464 13.3649 2.02709 10.3848 1.87065C13.2069 2.41255 14.3102 5.92034 12.2543 7.97548C9.98293 10.2469 6.08405 8.62907 6.08405 5.42019C6.08405 3.67256 7.33067 2.19401 9.01305 1.87065C6.03291 2.02716 3.37211 3.2148 1.36972 5.51764L0.698975 4.93641ZM9.69897 2.83013V3.62214C10.6923 3.62214 11.4969 4.42753 11.4969 5.42011H12.289C12.2897 3.98944 11.1296 2.83013 9.69897 2.83013Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
 
                 <form
                   class="button_to"
@@ -886,6 +881,28 @@
                 </div>
               </a>
 
+              <a
+                href="#"
+                class="knob"
+                aria-label="Toggle 'At a glance'"
+                data-level="0"
+              >
+                <svg
+                  width="19"
+                  height="10"
+                  viewBox="0 0 19 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.698975 4.93641C3.02393 2.26233 6.18104 0.961426 9.69897 0.961426C13.2169 0.961426 16.374 2.26231 18.699 4.93641L18.0273 5.51764C16.0256 3.21464 13.3649 2.02709 10.3848 1.87065C13.2069 2.41255 14.3102 5.92034 12.2543 7.97548C9.98293 10.2469 6.08405 8.62907 6.08405 5.42019C6.08405 3.67256 7.33067 2.19401 9.01305 1.87065C6.03291 2.02716 3.37211 3.2148 1.36972 5.51764L0.698975 4.93641ZM9.69897 2.83013V3.62214C10.6923 3.62214 11.4969 4.42753 11.4969 5.42011H12.289C12.2897 3.98944 11.1296 2.83013 9.69897 2.83013Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+
               <div class="card__settings" data-role="project_settings">
                 <details class="colorpicker">
                   <summary class="colorpicker__trigger">
@@ -897,28 +914,6 @@
                   </summary>
                   <!-- ...colorpicker__menu -->
                 </details>
-
-                <a
-                  href="#"
-                  class="knob"
-                  aria-label="Toggle 'At a glance'"
-                  data-level="0"
-                >
-                  <svg
-                    width="19"
-                    height="10"
-                    viewBox="0 0 19 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.698975 4.93641C3.02393 2.26233 6.18104 0.961426 9.69897 0.961426C13.2169 0.961426 16.374 2.26231 18.699 4.93641L18.0273 5.51764C16.0256 3.21464 13.3649 2.02709 10.3848 1.87065C13.2069 2.41255 14.3102 5.92034 12.2543 7.97548C9.98293 10.2469 6.08405 8.62907 6.08405 5.42019C6.08405 3.67256 7.33067 2.19401 9.01305 1.87065C6.03291 2.02716 3.37211 3.2148 1.36972 5.51764L0.698975 4.93641ZM9.69897 2.83013V3.62214C10.6923 3.62214 11.4969 4.42753 11.4969 5.42011H12.289C12.2897 3.98944 11.1296 2.83013 9.69897 2.83013Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
 
                 <form
                   class="button_to"
