@@ -40,7 +40,7 @@
   --card-color: var(--color-canvas);
   --font-size: var(--txt-medium);
   --max-width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   background-color: var(--card-color);
   border-radius: var(--radius-lg);
   border: 0;
@@ -230,4 +230,9 @@ svg:not(:root) {
 
 .card__detail[data-active='true'] {
   display: block;
+}
+
+.card__information {
+  height: 100%;
+  overflow: hidden;
 }
