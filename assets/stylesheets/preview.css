@@ -1,7 +1,6 @@
 .preview {
-  font-size: 0.875em;
+  font-size: var(--txt-xx-small);
 }
 
 .preview__title {
-  font-size: 1em;
 }

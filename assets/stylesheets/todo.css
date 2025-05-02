@@ -29,6 +29,25 @@
   inline-size: var(--checkbox-size);
 }
 
+.todo__check--checked {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: var(--color-green);
+  border-width: 0.1em;
+  opacity: 0.75;
+  position: relative;
+}
+
+.todo__check--checked:after {
+  background: url(../../prototype/assets/icons/check.svg) no-repeat center center;
+  background-size: 65%;
+  block-size: 100%;
+  content: '';
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  filter: brightness(0) saturate(100%) invert(59%) sepia(16%) saturate(1592%) hue-rotate(94deg) brightness(87%) contrast(93%);
+}
+
 .todo__asignee {
   display: inline;
   position: relative;
