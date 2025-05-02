@@ -19,11 +19,17 @@
   display: flex;
   gap: 0;
   align-items: flex-start;
-}
-
-.schedule-day__event {
   flex-direction: column;
   padding-inline-start: 1.5em;
+}
+
+.schedule-day__event .avatar-group {
+  display: inline-flex;
+}
+
+.schedule-day__event .avatar-group .avatar {
+  block-size: 1.21rem;
+  inline-size: 1.21rem;
 }
 
 .schedule-day__time-range {
