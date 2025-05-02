@@ -1,0 +1,54 @@
+.schedule-day {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-day__date {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.schedule-day__date h3 {
+  font-weight: 400;
+}
+
+.schedule-day__event {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.schedule-day__event {
+  flex-direction: column;
+  padding-inline-start: 1.5em;
+}
+
+.schedule-day__time-range {
+  color: var(--color-uncolor);
+}
+
+.schedule-day__mini-date {
+  display: inline-flex;
+  inline-size: 1.21em;
+  block-size: 1.21em;
+  margin-block-start: -0.245em;
+  position: relative;
+}
+
+.schedule-day__mini-date:before {
+  content: '';
+  position: absolute;
+  inline-size: 1.428em;
+  block-size: 1.428em;
+  inset-inline-start: -1.65em;
+  inset-block-start: -0.125em;
+  display: block;
+  background: rgba(0, 0, 0, 0) url(../../prototype/assets/icons/calendar.svg) center center no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  filter: invert(86%) sepia(6%) saturate(5417%) hue-rotate(34deg) brightness(104%) contrast(53%);
+}

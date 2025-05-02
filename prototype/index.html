@@ -27,12 +27,13 @@
     <link rel="stylesheet" href="../assets/stylesheets/avatar.css" />
     <link rel="stylesheet" href="../assets/stylesheets/knob.css" />
     <link rel="stylesheet" href="../assets/stylesheets/colorpicker.css" />
-    <link rel="stylesheet" href="../assets/stylesheets/preview.css" />
-    <link rel="stylesheet" href="../assets/stylesheets/todo.css" />
     <link
       rel="stylesheet"
       href="../assets/stylesheets/components/view-options.css"
     />
+    <link rel="stylesheet" href="../assets/stylesheets/preview.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/todo.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/schedule.css" />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -119,7 +120,7 @@
                     </h2>
 
                     <section class="card__details">
-                      <div class="card__detail">
+                      <div class="card__detail card-detail--description">
                         <p
                           class="card__description flush"
                           title=""
@@ -129,10 +130,8 @@
                           for sale.
                         </p>
                       </div>
-                      <div
-                        class="card__detail card__detail--todos"
-                        data-active="true"
-                      >
+
+                      <div class="card__detail card__detail--todos">
                         <div class="preview">
                           <!-- <h3 class="preview__title push_half--top">To-dos</h3> -->
                           <h4
@@ -212,8 +211,37 @@
                           </ul>
                         </div>
                       </div>
-                      <div class="card__detail card__detail--schedule">
-                        Schedule
+
+                      <div
+                        class="card__detail card__detail--schedule"
+                        data-active="true"
+                      >
+                        <div class="preview push_quarter--top">
+                          <div class="schedule-day">
+                            <div class="schedule-day__date push_quarter--top">
+                              <span class="schedule-day__mini-date"></span>
+                              <h3>Thur, May 1</h3>
+                            </div>
+                            <div class="schedule-day__event push_quarter--top">
+                              <h4>Prod - uploaded</h4>
+                              <div class="schedule-day__time-range">
+                                9:00 pm - 9:30 pm
+                              </div>
+                            </div>
+                          </div>
+                          <div class="schedule-day">
+                            <div class="schedule-day__date push_quarter--top">
+                              <span class="schedule-day__mini-date"></span>
+                              <h3>Thur, May 1</h3>
+                            </div>
+                            <div class="schedule-day__event push_quarter--top">
+                              <h4>Prod - uploaded</h4>
+                              <div class="schedule-day__time-range">
+                                9:00 pm - 9:30 pm
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </section>
                   </section>
