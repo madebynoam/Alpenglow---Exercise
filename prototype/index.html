@@ -624,37 +624,6 @@
       <section class="project-index__mystuff"></section>
     </div>
     <script src="assets/js/app.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const viewOptions = document.querySelector('.view-options');
-        const cardGrid = document.querySelector('.card-grid--projects');
-        const options = viewOptions.querySelectorAll('.view-options__item');
-
-        options.forEach((option) => {
-          option.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            const selectedRatio = option.getAttribute('data-ratio');
-
-            // Remove existing ratio classes
-            cardGrid.classList.remove(
-              'card-grid--16-9',
-              'card-grid--1-1',
-              'card-grid--4-3'
-            );
-
-            // Add the new ratio class
-            cardGrid.classList.add(`card-grid--${selectedRatio}`);
-
-            // Update selected state in menu
-            options.forEach((opt) => opt.classList.remove('selected'));
-            option.classList.add('selected');
-
-            // Close the dropdown
-            viewOptions.removeAttribute('open');
-          });
-        });
-      });
-    </script>
+    <script src="assets/js/view-options.js"></script>
   </body>
 </html>
