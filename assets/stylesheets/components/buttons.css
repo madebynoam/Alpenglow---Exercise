@@ -29,3 +29,9 @@
   padding: 0.1rem 0.33em;
   margin-inline-start: 0.33em;
 }
+
+@media screen and (max-width: 447px) {
+  .btn {
+    inline-size: 100%;
+  }
+}

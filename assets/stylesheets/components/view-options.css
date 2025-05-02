@@ -1,10 +1,29 @@
+.view-container {
+  container-type: inline-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@container (max-width: 540px) {
+  .view-container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
 .view-options {
   position: absolute;
   display: inline-flex;
   align-items: center;
   right: 0;
-  top: -50%;
   font-size: var(--txt-x-small);
+}
+
+@container (max-width: 540px) {
+  .view-options {
+    position: relative;
+  }
 }
 
 .view-options__trigger {

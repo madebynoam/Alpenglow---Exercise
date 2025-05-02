@@ -24,6 +24,10 @@
   padding: 0 0.75ch;
 }
 
+.container-type-inline-size {
+  container-type: inline-size;
+}
+
 .decorated--matched {
   color: inherit !important;
   text-decoration: underline;
