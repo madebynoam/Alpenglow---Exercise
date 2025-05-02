@@ -1,85 +1,89 @@
 /* Requires colors.css loaded first */
 
 :root {
-	--txt-xxxxx-small: 0.9rem;
-	--txt-xxxx-small: 1rem;
-	--txt-xxx-small: 1.2rem;
-	--txt-xx-small: 1.3rem;
-	--txt-x-small: 1.4rem;
-	--txt-small: 1.5rem;
-	--txt-medium: 1.6rem;
-	--txt-large: 1.8rem;
-	--txt-x-large: 2rem;
-	--txt-xx-large: 2.4rem;
-	--txt-xxx-large: 2.8rem;
-	--txt-xxxx-large: 3.2rem;
+  --txt-xxxxx-small: 0.9rem;
+  --txt-xxxx-small: 1rem;
+  --txt-xxx-small: 1.2rem;
+  --txt-xx-small: 1.3rem;
+  --txt-x-small: 1.4rem;
+  --txt-small: 1.5rem;
+  --txt-medium: 1.6rem;
+  --txt-large: 1.8rem;
+  --txt-x-large: 2rem;
+  --txt-xx-large: 2.4rem;
+  --txt-xxx-large: 2.8rem;
+  --txt-xxxx-large: 3.2rem;
 
-	--space-2xs: 0.4rem;
-	--space-xs: 0.8rem;
-	--space-sm: 1.2rem;
-	--space-md: 1.6rem;
-	--space-lg: 2.4rem;
-	--space-xl: 3.2rem;
-	--space-2xl: 4.8rem;
+  --space-2xs: 0.4rem;
+  --space-xs: 0.8rem;
+  --space-sm: 1.2rem;
+  --space-md: 1.6rem;
+  --space-lg: 2.4rem;
+  --space-xl: 3.2rem;
+  --space-2xl: 4.8rem;
 
-	--nav-height: 50px;
+  --nav-height: 50px;
 
-	--radius-sm: 4px;
-	--radius-md: 6px;
-	--radius-lg: 8px;
-	--radius-xl: 12px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
 
-	--shadow-base: 0 -1px 1px hsla(var(--hsl-black), 0.025), 0 1px 2px -0.5px hsla(var(--hsl-black), 0.05);
-	--shadow-sm: var(--shadow-base), 0 2px 4px -1px hsla(var(--hsl-black), 0.1);
-	--shadow-md: var(--shadow-sm), 0 4px 8px -2px hsla(var(--hsl-black), 0.1);
-	--shadow-lg: var(--shadow-md), 0 16px 32px -8px hsla(var(--hsl-black), 0.1);
-	--shadow-warm-base: 0 -1px 1px hsla(var(--hsl-uncolor), 0.05), 0 1px 2px -0.5px hsla(var(--hsl-uncolor), 0.1);
-	--shadow-warm-sm: var(--shadow-warm-base), 0 2px 4px -1px hsla(var(--hsl-uncolor), 0.2);
-	--shadow-warm-md: var(--shadow-warm-sm), 0 4px 8px -2px hsla(var(--hsl-uncolor), 0.2);
-	--shadow-warm-lg: var(--shadow-warm-md), 0 16px 32px -8px hsla(var(--hsl-uncolor), 0.2);
-	--shadow-card: 0 0 0 1px hsla(var(--hsl-uncolor), 0.1), var(--shadow-warm-md);
-	--shadow-modal: 0 0 0 1px hsla(var(--hsl-black), 0.1), 0 16px 24px -8px hsla(var(--hsl-black), 0.25), 0 24px 32px -16px hsla(var(--hsl-black), 0.25);
+  --checkbox-size: 1.3em;
+  --checkbox-py: 0.3125em;
+  --checkbox-px: calc(var(--checkbox-py) * 1.6);
+
+  --shadow-base: 0 -1px 1px hsla(var(--hsl-black), 0.025), 0 1px 2px -0.5px hsla(var(--hsl-black), 0.05);
+  --shadow-sm: var(--shadow-base), 0 2px 4px -1px hsla(var(--hsl-black), 0.1);
+  --shadow-md: var(--shadow-sm), 0 4px 8px -2px hsla(var(--hsl-black), 0.1);
+  --shadow-lg: var(--shadow-md), 0 16px 32px -8px hsla(var(--hsl-black), 0.1);
+  --shadow-warm-base: 0 -1px 1px hsla(var(--hsl-uncolor), 0.05), 0 1px 2px -0.5px hsla(var(--hsl-uncolor), 0.1);
+  --shadow-warm-sm: var(--shadow-warm-base), 0 2px 4px -1px hsla(var(--hsl-uncolor), 0.2);
+  --shadow-warm-md: var(--shadow-warm-sm), 0 4px 8px -2px hsla(var(--hsl-uncolor), 0.2);
+  --shadow-warm-lg: var(--shadow-warm-md), 0 16px 32px -8px hsla(var(--hsl-uncolor), 0.2);
+  --shadow-card: 0 0 0 1px hsla(var(--hsl-uncolor), 0.1), var(--shadow-warm-md);
+  --shadow-modal: 0 0 0 1px hsla(var(--hsl-black), 0.1), 0 16px 24px -8px hsla(var(--hsl-black), 0.25), 0 24px 32px -16px hsla(var(--hsl-black), 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--shadow-warm-sm: var(--shadow-sm);
-		--shadow-warm-md: var(--shadow-md);
-		--shadow-warm-lg: var(--shadow-lg);
-	}
+  :root {
+    --shadow-warm-sm: var(--shadow-sm);
+    --shadow-warm-md: var(--shadow-md);
+    --shadow-warm-lg: var(--shadow-lg);
+  }
 }
 
 html {
-	font-size: 10px;
-	block-size: 100%;
-	scrollbar-gutter: stable;
+  font-size: 10px;
+  block-size: 100%;
+  scrollbar-gutter: stable;
 }
 
 html,
 body {
-	--font-sans: system-ui;
-	background: var(--color-body);
-	color: var(--color-ink);
-	font-family: var(--font-sans);
-	text-rendering: optimizeLegibility;
+  --font-sans: system-ui;
+  background: var(--color-body);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
 }
 
 body {
-	font-size: var(--txt-medium);
-	line-height: 1.4;
+  font-size: var(--txt-medium);
+  line-height: 1.4;
 }
 
 @media screen and (min-width: 768px) {
-	body {
-		line-height: 1.5;
-	}
+  body {
+    line-height: 1.5;
+  }
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 section {
-	position: relative;
+  position: relative;
 }

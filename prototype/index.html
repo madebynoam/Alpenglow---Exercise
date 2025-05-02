@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="../assets/stylesheets/avatar.css" />
     <link rel="stylesheet" href="../assets/stylesheets/knob.css" />
     <link rel="stylesheet" href="../assets/stylesheets/colorpicker.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/preview.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/todo.css" />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -84,7 +86,7 @@
                     </h2>
 
                     <section class="card__details">
-                      <div class="card__detail" data-active="true">
+                      <div class="card__detail">
                         <p
                           class="card__description flush"
                           title=""
@@ -94,10 +96,87 @@
                           for sale.
                         </p>
                       </div>
-                      <div class="card__detail">
-                        Isa completed a task: Sorpa.
+                      <div
+                        class="card__detail card__detail--todos"
+                        data-active="true"
+                      >
+                        <div class="preview">
+                          <!-- <h3 class="preview__title push_half--top">To-dos</h3> -->
+                          <h4 class="todo__title push_quarter--ends">
+                            At a glance
+                          </h4>
+                          <ul class="todo__list" role="list">
+                            <li class="todo__row">
+                              <div class="todo__check"></div>
+
+                              <div class="preview__content">
+                                <p>
+                                  Baseboards - We need to figure out a way to
+                                  work with the uneven wall
+                                  <span class="todo__assignee u-nowrap">
+                                    <img
+                                      data-selectable-suppressed=""
+                                      data-behavior="rich_avatar"
+                                      data-rich-avatar-url="/5926919/people/47863987/rich_avatar"
+                                      data-avatar-for-person-id="47863987"
+                                      alt="N. Dan Almosnino"
+                                      title="N. Dan Almosnino, Noam Inc"
+                                      class="avatar"
+                                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+                                      width="130"
+                                      height="130"
+                                    />
+
+                                    N. D.
+                                  </span>
+                                </p>
+                              </div>
+                            </li>
+                            <li class="todo__row">
+                              <div class="todo__check"></div>
+
+                              <div class="preview__content">
+                                <p>
+                                  Sink wall
+                                  <span class="todo__assignee u-nowrap">
+                                    <img
+                                      data-selectable-suppressed=""
+                                      data-behavior="rich_avatar"
+                                      data-rich-avatar-url="/5926919/people/47863987/rich_avatar"
+                                      data-avatar-for-person-id="47863987"
+                                      alt="N. Dan Almosnino"
+                                      title="N. Dan Almosnino, Noam Inc"
+                                      class="avatar"
+                                      src="https://bc3-production-assets-cdn.basecamp-static.com/5926919/people/BAhpBLNY2gI=--038a0f240e73c806a5d7f4eede33392dea480385/avatar?v=1"
+                                      width="130"
+                                      height="130"
+                                    />
+
+                                    N. D.
+                                  </span>
+                                </p>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <h4 class="todo__title">At a glance</h4>
+                          <ul class="todo__list" role="list">
+                            <li class="todo__row">
+                              <div class="todo__check"></div>
+
+                              <div class="preview__content">
+                                <p>
+                                  Baseboards - We need to figure out a way to
+                                  work with the uneven wall
+                                </p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="card__detail">Hill chart</div>
+                      <div class="card__detail card__detail--schedule">
+                        Schedule
+                      </div>
                     </section>
                   </section>
 

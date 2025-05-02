@@ -1,0 +1,43 @@
+.todo__title {
+  font-size: 0.875em;
+}
+
+.todo__list {
+  margin-block: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo__row {
+  display: grid;
+  grid-template-columns: var(--checkbox-size) 1fr;
+  align-items: start;
+  column-gap: var(--checkbox-px);
+  padding-block: var(--checkbox-py);
+  position: relative;
+  flex: 1;
+}
+
+.todo__check {
+  --checkbox-size: 1.3em;
+  border-radius: 20%;
+  border: 1px solid var(--tint-ink-25);
+  display: inline-block;
+  flex-shrink: 0;
+  block-size: var(--checkbox-size);
+  vertical-align: baseline;
+  inline-size: var(--checkbox-size);
+}
+
+.todo__asignee {
+  display: inline;
+  position: relative;
+  font-size: 0.875em;
+  color: var(--color-uncolor);
+}
+
+.todo__assignee .avatar {
+  inline-size: 1.21em;
+  block-size: 1.21em;
+  margin-block-start: -0.245em;
+}
