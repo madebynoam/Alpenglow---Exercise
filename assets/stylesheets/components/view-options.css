@@ -42,7 +42,7 @@
   inset-inline-end: 0;
   text-align: start;
   inset-block-start: 3.2rem;
-  inline-size: 15rem;
+  inline-size: 100%;
   z-index: 10;
   top: calc(50% + 0.75rem);
   overflow: hidden;

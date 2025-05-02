@@ -7,6 +7,10 @@
   right: 1.5rem;
   bottom: 1rem;
   z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--txt-x-small);
 }
 
 .knob:hover {
