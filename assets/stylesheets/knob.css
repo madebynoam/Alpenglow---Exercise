@@ -2,7 +2,7 @@
   --trigger-size: 2.4rem;
   position: relative;
   cursor: pointer;
-  opacity: 0.33;
+  /* opacity: 0.33; */
   transition: opacity 150ms;
 }
 
@@ -23,6 +23,7 @@
 
 .knob__dial {
   transform-origin: 50% 57%;
+  transform-origin: 50% 50%;
   transition: transform 0.3s ease;
 }
 

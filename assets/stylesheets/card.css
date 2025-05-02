@@ -157,6 +157,7 @@
   inset-inline-end: 0.8rem;
   inset-block-start: 0.8rem;
   z-index: 5;
+  gap: 0.5rem;
 }
 
 .cards--bookmarked,

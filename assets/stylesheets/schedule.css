@@ -1,6 +1,10 @@
 .schedule-day {
   display: flex;
   flex-direction: column;
+  border-block-start: 1px solid var(--color-uncolor-30);
+}
+.schedule-day:first-child {
+  border-block-start: none;
 }
 
 .schedule-day__date {
