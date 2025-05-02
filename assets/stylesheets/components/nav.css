@@ -1,5 +1,5 @@
 .nav {
-    block-size: var(--nav-height);
-    font-size: var(--txt-x-small);
-    line-height: 1;
+  block-size: var(--nav-height);
+  font-size: var(--txt-x-small);
+  line-height: 1;
 }

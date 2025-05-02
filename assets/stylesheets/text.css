@@ -1,63 +1,63 @@
 :where(h1, h2, h3) {
-	line-height: 1.2;
+  line-height: 1.2;
 }
 
 :is(h1, .h1) {
-	font-size: var(--txt-xxx-large);
+  font-size: var(--txt-xxx-large);
 }
 
 .txt--xxxxx-small {
-	font-size: var(--txt-xxxxx-small);
+  font-size: var(--txt-xxxxx-small);
 }
 
 .txt--xxxx-small {
-	font-size: var(--txt-xxxx-small);
+  font-size: var(--txt-xxxx-small);
 }
 
 .txt--xxx-small {
-	font-size: var(--txt-xxx-small);
+  font-size: var(--txt-xxx-small);
 }
 
 .txt--xx-small {
-	font-size: var(--txt-xx-small);
+  font-size: var(--txt-xx-small);
 }
 
 .txt--x-small {
-	font-size: var(--txt-x-small);
+  font-size: var(--txt-x-small);
 }
 
 .txt--small {
-	font-size: var(--txt-small);
+  font-size: var(--txt-small);
 }
 
 .txt--medium {
-	font-size: var(--txt-medium);
+  font-size: var(--txt-medium);
 }
 
 .txt--large {
-	font-size: var(--txt-large);
+  font-size: var(--txt-large);
 }
 
 .txt--x-large {
-	font-size: var(--txt-x-large);
+  font-size: var(--txt-x-large);
 }
 
 .txt--xx-large {
-	font-size: var(--txt-xx-large);
+  font-size: var(--txt-xx-large);
 }
 
 .txt--xxx-large {
-	font-size: var(--txt-xxx-large);
+  font-size: var(--txt-xxx-large);
 }
 
 .txt--xxxx-large {
-	font-size: var(--txt-xxxx-large);
+  font-size: var(--txt-xxxx-large);
 }
 
 .txt--smaller {
-	font-size: 0.875em;
+  font-size: 0.875em;
 }
 
 .txt--ink {
-	color: var(--color-ink);
+  color: var(--color-ink);
 }

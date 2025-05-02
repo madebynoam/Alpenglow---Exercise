@@ -1,31 +1,31 @@
 .btn {
-    display: inline-block;
-    padding: .5em 1em;
-    border: 1px solid var(--tint-ink-15);
-    border-radius: 99rem;
-    line-height: 1.5;
-    vertical-align: middle;
-    text-decoration: none;
-    text-align: center;
-    white-space: normal;
-    cursor: pointer;
-    outline-offset: .4em
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid var(--tint-ink-15);
+  border-radius: 99rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  white-space: normal;
+  cursor: pointer;
+  outline-offset: 0.4em;
 }
 
 .btn:hover {
-    text-decoration: none !important
+  text-decoration: none !important;
 }
 
 .btn--primary {
-    background-color: var(--color-theme, var(--color-green));
-    border-color: var(--color-theme, var(--color-green));
-    color: var(--color-inverted)
+  background-color: var(--color-theme, var(--color-green));
+  border-color: var(--color-theme, var(--color-green));
+  color: var(--color-inverted);
 }
 
 .btn__keyboard-shortcut {
-    box-shadow: 0 1px 0 var(--color-ink);
-    border: 1px solid var(--color-ink);
-    border-radius: .33em;
-    padding: .1rem .33em;
-    margin-inline-start: .33em;
+  box-shadow: 0 1px 0 var(--color-ink);
+  border: 1px solid var(--color-ink);
+  border-radius: 0.33em;
+  padding: 0.1rem 0.33em;
+  margin-inline-start: 0.33em;
 }
