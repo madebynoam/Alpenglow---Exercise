@@ -32,3 +32,12 @@
     inline-size: 90%;
   }
 }
+
+.panel__header {
+  --panel-header-spacer: calc(var(--base-space) * 2);
+  padding-block-start: var(--panel-header-spacer);
+}
+
+.panel__description {
+  font-weight: 400;
+}

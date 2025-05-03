@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="assets/stylesheets/components/nav.css" />
     <link rel="stylesheet" href="assets/stylesheets/components/panel.css" />
+    <link rel="stylesheet" href="assets/stylesheets/components/intro.css" />
+    <link rel="stylesheet" href="assets/stylesheets/components/buttons.css" />
     <link
       rel="stylesheet"
       href="assets/stylesheets/components/change-log.css"
@@ -28,9 +30,6 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="icon.png" />
-
-    <!-- <link rel="manifest" href="site.webmanifest" /> -->
-    <!-- <meta name="theme-color" content="#fafafa" /> -->
   </head>
 
   <body>
@@ -38,6 +37,61 @@
       <nav></nav>
     </div>
     <div class="panel panel--project">
+      <header class="panel__header">
+        <h1 class="centered">Rework Basecamp's Home Screen</h1>
+        <h4 class="panel__description centered push_quarter--top">
+          Make it more of a destination.
+        </h4>
+
+        <div class="flex flex-wrap flex--gap flex-center-justify push--top">
+          <a class="flush btn btn--primary" href="/prototype/"
+            >Launch prototype</a
+          >
+          <a class="flush btn btn--primary" href="#">View the code</a>
+        </div>
+      </header>
+
+      <video
+        src="assets/images/activity/20250430-dynamic-cards-inspector-click-through.mp4"
+        controls
+        class="push_one_and_a_half--top"
+        width="100%"
+        style="width: 80%; margin-inline: auto; display: block"
+      ></video>
+
+      <section class="intro push_one_and_a_half--top">
+        <!-- <h3>What's been happening? What’s next?</h3> -->
+
+        <p class="push_half--top">
+          <strong>What's been happening? What’s next?</strong> Those are the two
+          questions I have when I open Basecamp. Today's Home screen doesn't
+          answer them right away. I click into projects. Scan the Activity page.
+          What if the answers were right there, on the cards, at a glance?
+        </p>
+
+        <!-- <div class="break push--ends"></div> -->
+
+        <!-- <h3></h3> -->
+
+        <p class="push_half--top">
+          <strong>Why not a full redesign?</strong> Basecamp's Home is warm.
+          Inviting. Most other products feel like data-tables on steroids. Cold
+          and sterile. That's not Basecamp. I didn't want to lose that.
+        </p>
+
+        <p class="push_half--top">
+          <strong>So I focused on the cards.</strong> What if they were just a
+          little more dynamic? Helpful, not busy. Enough to answer those two
+          questions. Customizable, with a click.
+        </p>
+
+        <p class="push_half--top">
+          Whether you're working on one project or many, I think you're going to
+          like it.
+        </p>
+        <p>— N. Dan Alm</p>
+      </section>
+
       <h2
         class="latest-activity__project-headline break push_one_and_a_half--top centered"
       >
