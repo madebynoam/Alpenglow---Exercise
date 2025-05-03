@@ -122,10 +122,11 @@
 
 .card--project .card__people {
   position: absolute;
-  inset-block-end: 0.6em;
+  inset-block-end: 0;
   inset-inline-start: 1em;
   inset-inline-end: 1em;
   background: var(--card-color);
+  padding-block-end: 0.6em;
 }
 
 .card--project .card__people:before {

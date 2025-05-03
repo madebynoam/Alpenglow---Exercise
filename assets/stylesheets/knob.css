@@ -4,8 +4,8 @@
   cursor: pointer;
   /* opacity: 0.33; */
   transition: opacity 150ms;
-  right: 1.5rem;
-  bottom: 1rem;
+  inset-block-end: 1rem;
+  inset-inline-end: 1.5rem;
   z-index: 5;
   display: inline-flex;
   align-items: center;
