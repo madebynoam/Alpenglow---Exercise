@@ -62,7 +62,7 @@
 
 .view-options__item.selected {
   font-weight: 600;
-  background: url(../../assets/icons/check.svg) no-repeat left 1rem center;
+  background: url(../../icons/check.svg) no-repeat left 1rem center;
   background-size: 1em;
 }
 

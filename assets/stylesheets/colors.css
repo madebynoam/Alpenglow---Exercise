@@ -199,5 +199,49 @@
     --color-slate-80: hsl(201.3, 56.4%, 89.2%);
     --color-slate-90: hsl(201.2, 63%, 94.7%);
     --color-slate-100: hsl(205.7, 53.8%, 97.5%);
+
+    --hsl-blue: 210, 92.4%, 69%;
+    --color-blue-10: hsl(206, 29.4%, 20%);
+    --color-blue-20: hsl(209.3, 34.4%, 24.5%);
+    --color-blue-30: hsl(209, 38.2%, 29.8%);
+    --color-blue-40: hsl(210.6, 50%, 39.2%);
+    --color-blue-50: hsl(212.1, 77.5%, 56.5%);
+    --color-blue-70: hsl(208, 100%, 82.4%);
+    --color-blue-80: hsl(205.9, 100%, 90%);
+    --color-blue-90: hsl(205.4, 100%, 94.9%);
+    --color-blue-100: hsl(201.4, 100%, 97.3%);
+
+    --hsl-red: 14.4, 90.1%, 68.2%;
+    --color-red-10: hsl(0, 5.8%, 20.4%);
+    --color-red-20: hsl(9.2, 10.4%, 24.5%);
+    --color-red-30: hsl(8, 19.2%, 30.6%);
+    --color-red-40: hsl(8.4, 38.5%, 40.2%);
+    --color-red-50: hsl(8.9, 69.5%, 56.3%);
+    --color-red-70: hsl(14.8, 100%, 83.3%);
+    --color-red-80: hsl(14, 100%, 90.8%);
+    --color-red-90: hsl(19.2, 100%, 95.1%);
+    --color-red-100: hsl(18.5, 100%, 97.5%);
+
+    --hsl-green: 134.1, 39.1%, 59.4%;
+    --color-green-10: hsl(174, 10.4%, 18.8%);
+    --color-green-20: hsl(165, 10.3%, 22.7%);
+    --color-green-30: hsl(159.1, 16.8%, 26.9%);
+    --color-green-40: hsl(152.7, 25.9%, 33.3%);
+    --color-green-50: hsl(143.4, 42.6%, 43.7%);
+    --color-green-70: hsl(122.6, 41.8%, 78.4%);
+    --color-green-80: hsl(110.5, 54.3%, 86.3%);
+    --color-green-90: hsl(105, 76.2%, 91.8%);
+    --color-green-100: hsl(102, 90.9%, 95.7%);
+
+    --hsl-purple: 264.8, 76.7%, 76.5%;
+    --color-purple-10: hsl(252, 4.8%, 20.6%);
+    --color-purple-20: hsl(255, 9.2%, 25.5%);
+    --color-purple-30: hsl(260.8, 15.9%, 32.2%);
+    --color-purple-40: hsl(265.2, 30.4%, 44.5%);
+    --color-purple-50: hsl(269.6, 75.6%, 64.7%);
+    --color-purple-70: hsl(259.6, 93.2%, 88.4%);
+    --color-purple-80: hsl(256.9, 100%, 93.7%);
+    --color-purple-90: hsl(255, 100%, 96.9%);
+    --color-purple-100: hsl(255, 100%, 98.4%);
   }
 }
