@@ -120,11 +120,6 @@
   display: -webkit-box;
 }
 
-.card--project .card__title + .card__description,
-.card--project .card__title + .card__metadata {
-  padding-block-start: 0.2em;
-}
-
 .card--project .card__people {
   position: absolute;
   inset-block-end: 0.6em;
@@ -235,6 +230,10 @@
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+.card__details {
+  padding-block-start: 0.3em;
 }
 
 .card__detail {
