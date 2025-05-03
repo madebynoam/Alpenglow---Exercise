@@ -1,14 +1,14 @@
 {
-	"useTabs": false,
-	"semi": true,
-	"singleQuote": true,
-	"printWidth": 80,
-	"overrides": [
-		{
-			"files": "*.css",
-			"options": {
-				"printWidth": 999
-			}
-		}
-	]
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 90,
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "printWidth": 999
+      }
+    }
+  ]
 }

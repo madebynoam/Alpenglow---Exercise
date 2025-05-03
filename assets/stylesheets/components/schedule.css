@@ -58,7 +58,7 @@
   inset-inline-start: -1.65em;
   inset-block-start: -0.125em;
   display: block;
-  background: rgba(0, 0, 0, 0) url(../../prototype/assets/icons/calendar.svg) center center no-repeat;
+  background: rgba(0, 0, 0, 0) url(../../icons/calendar.svg) center center no-repeat;
   background-size: cover;
   top: 0;
   left: 0;

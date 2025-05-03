@@ -27,7 +27,7 @@
 }
 
 .view-options__trigger {
-  background: url(../../../prototype/assets/icons/dropdown-indicator.svg) no-repeat right 0.8em center;
+  background: url(../../icons/dropdown-indicator.svg) no-repeat right 0.8em center;
   background-size: 0.55em;
   border-radius: 1.5em;
   cursor: pointer;
@@ -62,7 +62,7 @@
 
 .view-options__item.selected {
   font-weight: 600;
-  background: url(../../../prototype/assets/icons/check.svg) no-repeat left 1rem center;
+  background: url(../../assets/icons/check.svg) no-repeat left 1rem center;
   background-size: 1em;
 }
 

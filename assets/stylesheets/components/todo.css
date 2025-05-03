@@ -38,7 +38,7 @@
 }
 
 .todo__check--checked:after {
-  background: url(../../prototype/assets/icons/check.svg) no-repeat center center;
+  background: url(../../icons/check.svg) no-repeat center center;
   background-size: 65%;
   block-size: 100%;
   content: '';
