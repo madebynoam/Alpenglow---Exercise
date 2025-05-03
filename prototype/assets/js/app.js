@@ -129,4 +129,21 @@ document.addEventListener('DOMContentLoaded', () => {
       `Saved level ${nextLevel} for card ${currentCardId} via delegation`
     );
   });
+
+  // Scroll marker to show/hide nav border
+  const marker = document.querySelector('.scroll-marker');
+  const nav = document.querySelector('.nav__bar');
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) {
+        nav.classList.add('nav__bar--scrolled');
+      } else {
+        nav.classList.remove('nav__bar--scrolled');
+      }
+    },
+    { threshold: 0 }
+  );
+
+  observer.observe(marker);
 });
