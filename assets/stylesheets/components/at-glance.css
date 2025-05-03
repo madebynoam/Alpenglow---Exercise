@@ -1,4 +1,4 @@
-.knob {
+.at-glance {
   --trigger-size: 2.4rem;
   position: absolute;
   cursor: pointer;
@@ -13,11 +13,11 @@
   font-size: var(--txt-x-small);
 }
 
-.knob:hover {
+.at-glance:hover {
   opacity: 1;
 }
 
-.knob__icon {
+.at-glance__icon {
   --size: 2.4rem;
   border-radius: 50%;
   cursor: pointer;
@@ -28,23 +28,23 @@
   inline-size: var(--trigger-size);
 }
 
-.knob__dial {
+.at-glance__dial {
   transform-origin: 50% 57%;
   transition: transform 0.3s ease;
 }
 
-.knob[data-level='0'] .knob__dial {
+.at-glance[data-level='0'] .at-glance__dial {
   transform: rotate(0deg);
 }
-.knob[data-level='1'] .knob__dial {
+.at-glance[data-level='1'] .at-glance__dial {
   transform: rotate(45deg);
 }
-.knob[data-level='2'] .knob__dial {
+.at-glance[data-level='2'] .at-glance__dial {
   transform: rotate(90deg);
 }
-.knob[data-level='3'] .knob__dial {
+.at-glance[data-level='3'] .at-glance__dial {
   transform: rotate(135deg);
 }
-.knob[data-level='4'] .knob__dial {
+.at-glance[data-level='4'] .at-glance__dial {
   transform: rotate(180deg);
 }

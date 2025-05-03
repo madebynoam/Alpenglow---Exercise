@@ -27,7 +27,7 @@
   opacity: 1;
 }
 
-.card--project:has(:focus-visible):not(:has(.knob:focus, .knob:focus-visible)) .colorpicker__trigger,
+.card--project:has(:focus-visible):not(:has(.at-glance:focus, .at-glance:focus-visible)) .colorpicker__trigger,
 .card--project:hover .colorpicker__trigger {
   opacity: 0.33;
 }

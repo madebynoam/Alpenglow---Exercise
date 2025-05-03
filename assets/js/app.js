@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to apply state (level) to a card, treating all details equally
   const applyCardLevel = (card, level, allDetails) => {
     // Renamed availableDetails -> allDetails
-    const knob = card.querySelector('.knob');
-    if (!knob) return;
+    const atGlanceButton = card.querySelector('.at-glance');
+    if (!atGlanceButton) return;
 
     const numTotalDetails = allDetails.length;
     if (numTotalDetails === 0) {
       console.warn(`Card ${card.dataset.cardId} has no details to cycle.`);
-      knob.dataset.level = 0; // Set level to 0 if no details
+      atGlanceButton.dataset.level = 0; // Set level to 0 if no details
       return; // Nothing to activate
     }
 
@@ -25,13 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     // Apply level to knob
-    knob.dataset.level = actualLevel;
+    atGlanceButton.dataset.level = actualLevel;
 
     // Deactivate all details first
     const allDetailElements = card.querySelectorAll('.card__detail'); // Use the general selector here too
-    allDetailElements.forEach((detail) =>
-      detail.removeAttribute('data-active')
-    );
+    allDetailElements.forEach((detail) => detail.removeAttribute('data-active'));
 
     // Activate the correct detail based on the 0-based index (actualLevel)
     if (allDetails[actualLevel]) {
@@ -44,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
     }
 
-    // The visual dial rotation is handled by CSS based on knob[data-level]
+    // The visual dial rotation is handled by CSS based on at-glance[data-level]
   };
 
   // Initialize cards: cache ALL details and load initial state
@@ -64,14 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (savedStateJSON) {
       try {
         const savedState = JSON.parse(savedStateJSON);
-        if (typeof savedState.knobLevel === 'number') {
-          initialLevel = savedState.knobLevel;
+        if (typeof savedState.atGlanceLevel === 'number') {
+          initialLevel = savedState.atGlanceLevel;
           console.log(`Loaded level ${initialLevel} for card ${cardId}`);
         } else {
-          console.warn(
-            `Invalid saved state structure for card ${cardId}:`,
-            savedState
-          );
+          console.warn(`Invalid saved state structure for card ${cardId}:`, savedState);
           localStorage.removeItem(`cardState-${cardId}`);
         }
       } catch (e) {
@@ -89,22 +84,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // *** Add delegated event listener for all knob clicks ***
   document.addEventListener('click', (event) => {
     // Check if the clicked element or its ancestor is a knob inside a card
-    const clickedKnob = event.target.closest('.card[data-card-id] .knob');
+    const clickedAtGlance = event.target.closest('.card[data-card-id] .at-glance');
 
-    if (!clickedKnob) {
+    if (!clickedAtGlance) {
       return; // Click was not on a knob within a card
     }
 
     event.preventDefault(); // Prevent default link behavior if knob is an <a>
 
-    const currentCard = clickedKnob.closest('.card[data-card-id]');
+    const currentCard = clickedAtGlance.closest('.card[data-card-id]');
     const currentCardId = currentCard?.dataset.cardId;
     const detailsForThisCard = cardDetailsCache.get(currentCard); // Get the list of ALL details
 
     if (!currentCard || !currentCardId || !detailsForThisCard) {
       console.error(
-        'Event Delegation Error: Could not find card, cardId, or cached details for knob click:',
-        clickedKnob
+        'Event Delegation Error: Could not find card, cardId, or cached details for at-glance click:',
+        clickedAtGlance
       );
       return;
     }
@@ -112,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const numTotalDetails = detailsForThisCard.length;
     if (numTotalDetails === 0) return; // Cannot cycle if no details
 
-    const currentLevel = parseInt(clickedKnob.dataset.level || '0', 10);
+    const currentLevel = parseInt(clickedAtGlance.dataset.level || '0', 10);
     // Cycle based on total details (0 to N-1)
     const nextLevel = (currentLevel + 1) % numTotalDetails;
 
@@ -120,14 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
     applyCardLevel(currentCard, nextLevel, detailsForThisCard);
 
     // Save the new state (only the level)
-    const stateToSave = { knobLevel: nextLevel };
-    localStorage.setItem(
-      `cardState-${currentCardId}`,
-      JSON.stringify(stateToSave)
-    );
-    console.log(
-      `Saved level ${nextLevel} for card ${currentCardId} via delegation`
-    );
+    const stateToSave = { atGlanceLevel: nextLevel };
+    localStorage.setItem(`cardState-${currentCardId}`, JSON.stringify(stateToSave));
+    console.log(`Saved level ${nextLevel} for card ${currentCardId} via delegation`);
   });
 
   // Scroll marker to show/hide nav border
