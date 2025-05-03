@@ -2,7 +2,7 @@
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
-  "printWidth": 90,
+  "printWidth": 100,
   "overrides": [
     {
       "files": "*.css",
