@@ -27,24 +27,3 @@
   place-items: center;
   inline-size: var(--trigger-size);
 }
-
-.at-glance__dial {
-  transform-origin: 50% 57%;
-  transition: transform 0.3s ease;
-}
-
-.at-glance[data-level='0'] .at-glance__dial {
-  transform: rotate(0deg);
-}
-.at-glance[data-level='1'] .at-glance__dial {
-  transform: rotate(45deg);
-}
-.at-glance[data-level='2'] .at-glance__dial {
-  transform: rotate(90deg);
-}
-.at-glance[data-level='3'] .at-glance__dial {
-  transform: rotate(135deg);
-}
-.at-glance[data-level='4'] .at-glance__dial {
-  transform: rotate(180deg);
-}
