@@ -123,6 +123,19 @@
   --color-blue-90: hsl(217.5, 68.1%, 18.4%);
   --color-blue-100: hsl(220, 56.8%, 14.5%);
   --color-blue: var(--color-blue-60);
+
+  --hsl-purple: 264.9, 56.2%, 58.8%;
+  --color-purple-10: hsl(255, 100%, 98.4%);
+  --color-purple-20: hsl(251.2, 100%, 96.9%);
+  --color-purple-30: hsl(255, 100%, 93.7%);
+  --color-purple-40: hsl(255.8, 82.6%, 86.5%);
+  --color-purple-50: hsl(260.8, 90.8%, 74.5%);
+  --color-purple-60: hsl(var(--hsl-purple));
+  --color-purple-70: hsl(267.3, 43.7%, 45.3%);
+  --color-purple-80: hsl(271.5, 56.2%, 28.6%);
+  --color-purple-90: hsl(275.8, 62%, 19.6%);
+  --color-purple-100: hsl(277.1, 55.3%, 14.9%);
+  --color-purple: var(--color-purple-60);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -48,6 +48,10 @@
   word-wrap: break-word;
 }
 
+:root[data-color-scheme='dark'] [data-color-picker-color='purple'] {
+  --card-color: var(--color-purple-40);
+}
+
 .card--project {
   --card-color: var(--color-canvas);
   --font-size: var(--txt-medium);
@@ -248,4 +252,8 @@ svg:not(:root) {
 .card__information {
   height: 100%;
   overflow: hidden;
+}
+
+[data-color-picker-color='purple'] {
+  --card-color: var(--color-purple-30);
 }
