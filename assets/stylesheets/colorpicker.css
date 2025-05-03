@@ -27,10 +27,11 @@
   opacity: 1;
 }
 
-.card--project:where(:hover) .colorpicker__trigger,
-.card--project:where(:has(a:is(:focus, :focus-visible))) .colorpicker__trigger {
+.card--project:has(:focus-visible):not(:has(.knob:focus, .knob:focus-visible)) .colorpicker__trigger,
+.card--project:hover .colorpicker__trigger {
   opacity: 0.33;
 }
+
 .colorpicker__menu {
   animation: fade-in-down 0.15s ease-in-out;
   background: var(--color-canvas-light);
