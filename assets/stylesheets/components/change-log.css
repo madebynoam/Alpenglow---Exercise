@@ -2,3 +2,7 @@
   margin-inline: auto;
   max-width: 70ch;
 }
+
+.change-log__item {
+  margin-block-start: 1.875em;
+}
