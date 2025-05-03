@@ -53,12 +53,12 @@
   }
 }
 
-.nav__logo svg {
+.nav__logo-icon {
   inline-size: auto;
 }
 
 @media screen and (max-width: 767px) {
-  .nav__logo svg {
+  .nav__logo-icon {
     transform: scale(0.8);
     transform-origin: center left;
   }
@@ -104,7 +104,7 @@
   color: var(--color-theme, var(--color-ink));
 }
 
-.nav__link svg {
+.nav__link-icon {
   inline-size: 2rem;
   block-size: 2rem;
   margin-inline-end: 0.4rem;
@@ -112,7 +112,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .nav__link svg {
+  .nav__link-icon {
     inline-size: 16px;
     margin-inline-end: 0;
   }
@@ -126,7 +126,7 @@
   padding-inline-start: 0.8rem;
 }
 
-.nav__link--me img {
+.nav__avatar-icon {
   inline-size: 3.2rem;
   block-size: auto;
   border-radius: 100%;
