@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Element References ---
   const viewOptions = document.querySelector(SELECTORS.viewOptions);
-  const cardGrid = document.querySelector(SELECTORS.cardGrid);
+  // Select ALL card grid elements
+  const cardGrids = document.querySelectorAll(SELECTORS.cardGrid); // Changed variable name for clarity
 
   // Exit if essential elements are not found
   if (!viewOptions) {
@@ -25,9 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     return;
   }
-  if (!cardGrid) {
+  // Check if ANY card grids were found
+  if (cardGrids.length === 0) {
+    // Updated check
     console.warn(
-      `Initialization failed: Element with selector "${SELECTORS.cardGrid}" not found.`
+      `Initialization failed: No elements with selector "${SELECTORS.cardGrid}" found.`
     );
     return;
   }
@@ -68,17 +71,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to apply a ratio preference
   const applyRatio = (ratio) => {
-    // Remove all known ratio classes explicitly
-    cardGrid.classList.remove(...cardGridRatioClasses);
-    // Add the new ratio class (ensure it's a valid one)
-    if (possibleRatios.includes(ratio)) {
-      cardGrid.classList.add(`${CLASSES.cardGridPrefix}${ratio}`);
-    } else {
-      console.warn(
-        `Attempted to apply invalid ratio: ${ratio}. Applying default: ${DEFAULT_RATIO}`
-      );
-      cardGrid.classList.add(`${CLASSES.cardGridPrefix}${DEFAULT_RATIO}`);
-      ratio = DEFAULT_RATIO; // Correct the ratio for menu update and storage
+    // Apply changes to EACH card grid found
+    cardGrids.forEach((cardGrid) => {
+      // Added forEach loop
+      // Remove all known ratio classes explicitly
+      cardGrid.classList.remove(...cardGridRatioClasses);
+      // Add the new ratio class (ensure it's a valid one)
+      if (possibleRatios.includes(ratio)) {
+        cardGrid.classList.add(`${CLASSES.cardGridPrefix}${ratio}`);
+      } else {
+        console.warn(
+          `Attempted to apply invalid ratio: ${ratio}. Applying default: ${DEFAULT_RATIO}`
+        );
+        cardGrid.classList.add(`${CLASSES.cardGridPrefix}${DEFAULT_RATIO}`);
+        // No need to correct 'ratio' variable here as it's done outside the loop or just used for this iteration
+      }
+    }); // End forEach loop
+
+    // Correct the ratio if it was invalid, for menu update and storage
+    if (!possibleRatios.includes(ratio)) {
+      ratio = DEFAULT_RATIO;
     }
 
     // Update selected state in menu

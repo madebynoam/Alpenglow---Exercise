@@ -33,6 +33,16 @@
   padding: 0 0.75ch;
 }
 
+.break--block > span {
+  font-size: var(--txt-x-small);
+  display: inline-block;
+  padding: 0.3em 0.73em;
+  color: var(--color-inverted);
+  background: var(--color-uncolor-50);
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
 .container-type-inline-size {
   container-type: inline-size;
 }
